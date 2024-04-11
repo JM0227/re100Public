@@ -1,0 +1,1612 @@
+<!-- ============= [s]메타 공통 ============= -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="description" content="SK E&S REC SERVICE" />
+	<meta name="keywords" content="SK E&S REC SERVICE" />
+	<meta name="classification" content="SK E&S REC SERVICE" />
+	<meta name="author" content="SK E&S REC SERVICE" />
+	<meta name="title" content="SK E&S REC SERVICE">
+	<meta name="apple-mobile-web-app-title" content="SK E&S REC SERVICE">
+	<meta name="subject" content="SK E&S REC SERVICE" />
+	<meta name="robots" content="index,follow" />
+	<title>SK E&amp;S RE100 사업자 서비스</title>
+	<!-- favicon -->
+	<link rel="shortcut icon" href="../../../static/assets/images/favi/favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="../../../static/assets/images/favi/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../../../static/assets/images/favi/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../../../static/assets/images/favi/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../../../static/assets/images/favi/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../../../static/assets/images/favi/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../../../static/assets/images/favi/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../../../static/assets/images/favi/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../../../static/assets/images/favi/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../../../static/assets/images/favi/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="../../../static/assets/images/favi/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../static/assets/images/favi/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../../../static/assets/images/favi/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../static/assets/images/favi/favicon-16x16.png">
+	<!-- <link rel="manifest" href="../../assets/images/favi/manifest.json"> -->
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="../../../static/assets/images/favi/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="canonical" href="이곳에 최종 도메인 주소입력">
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="../../../static/assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../../../static/assets/css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="../../../static/assets/css/theme_green.css" />
+	<!-- js -->
+	<script type="text/javascript" src="../../../static/assets/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../../../static/assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../static/assets/js/swiper.min.js"></script>
+	<script type="text/javascript" src="../../../static/assets/js/ui.js"></script>
+</head>
+
+<body>
+<!-- ============= [e]메타 공통 ============= -->
+
+
+
+
+
+<!-- ============= [s]헤더 공통 ============= -->
+	<!--
+		[header]
+		- 1.로그인 페이지 : 헤더공통을 인클루드하지 않는다.
+		- 2.회원가입 페이지 : 헤더공통을 인클루드 하지만 <header class="header header__member"> 클래스가 추가된다.
+		- 3.나머지 페이지 : <header class="header">
+	-->
+	<dl id="skipNav">
+		<dt>바로가기 메뉴</dt>
+		<dd><a href="#main">본문 바로가기</a></dd>
+		<dd><a href="#gnb">주메뉴 바로가기</a></dd>
+	</dl>
+	<header class="header">
+		<div class="header__inner">
+			<!--
+				- 히스토리백 버튼은 뒤로 이동할 히스토리가 있을 경우에만 보이도록 한다.
+				show : <div class="history__back on">
+				hide : <div class="history__back">
+			-->
+			<div class="history__back on"><button type="button"></button></div>
+			<h1 class="logo">
+				<a href="../../main/main/메인.html" title="SK E&amp;S RE100 거래서비스"></a>
+			</h1>
+			<div class="util">
+				<span class="select">
+					<select>
+						<option>SK E&amp;S</option>
+					</select>
+				</span>
+				<span><em>홍길동</em>님</span>
+				<button type="button" onclick="location.href='../../member/login/로그인.html'" class="btn btn logout">로그아웃</button>
+			</div>
+			<button type="button" class="nav__hamburger" aria-owns="navMobile" aria-expanded="false" aria-label="모바일 메뉴">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+
+		<!--
+			[pc메뉴 활성화]
+			- 활성화 클래스는 a태그에 붙는다.
+
+
+			[1뎁스]
+			- 활성화 대상  : .nav__link
+			- 활성화 클래스 : .nav__link--active
+			- 활성화 아이탬 attr : aria-current="page"
+			- 1뎁스 활성화는 클래스외에 aria도 같이 붙는다.
+
+			비활성 : <a class="nav__link" href="#">
+			활성 :   <a class="nav__link nav__link--active" href="#" aria-current="page">
+
+
+			[2뎁스]
+			- 활성화 대상  : .nav-sub__link
+			- 활성화 클래스 : .nav-sub__link--active
+
+			비활성 : <a class="nav-sub__link" href="#">
+			활성 :   <a class="nav-sub__link nav-sub__link--active" href="#">
+		-->
+		<nav id="gnb" class="nav full-nav">
+			<ul class="nav__list">
+				<li class="nav__item">
+					<a class="nav__link" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">계약</a>
+					<ul class="nav-sub__list">
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../contract/ppa/직접PPA_공급개별계약_목록.html">직접PPA <span>$공급$</span> 개별 계약</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../contract/ppa_group/직접PPA_공급그룹계약_목록.html">직접PPA <span>$공급$</span> 그룹 계약</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../contract/ppa_final/직접PPA_최종계약_목록.html">직접PPA 최종 계약</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../contract/vppa/VPPA_공급계약_목록.html">V.PPA 계약</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../contract/supply/보장공급량관리_목록.html">보장공급량 관리</a></li>
+					</ul>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">대금정산</a>
+					<ul class="nav-sub__list">
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../calculation/ppa/직접PPA대금_공급_목록.html">직접PPA 대금</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../calculation/ppa_rec/직접PPA초과발전REC대금_공급_목록.html">직접PPA 초과발전REC 대금</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../calculation/vppa/VPPA대금_공급_목록.html">V.PPA 대금</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../calculation/deposit/입금확인요청_목록.html">입금 확인 요청</a></li>
+					</ul>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">계좌</a>
+					<ul class="nav-sub__list">
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../account/deposit/입금계좌관리_목록.html">입금계좌 관리</a></li>
+					</ul>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">마이페이지</a>
+					<ul class="nav-sub__list">
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../mypage/schedule/대금정산일정.html">대금정산 일정</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../mypage/info/사업자정보관리_목록.html">사업자정보 관리</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../mypage/account/통합계정관리_목록.html">통합계정 관리</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../mypage/password/비밀번호재설정_step1.html">비밀번호 재설정</a></li>
+					</ul>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">설정</a>
+					<ul class="nav-sub__list">
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../setting/notice/공지사항_목록.html">공지사항</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../setting/qna/1:1문의_목록.html">1:1 문의</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<!--
+			[모바일 메뉴 활성화]
+			- 활성화 클래스는 a태그에 붙는다.
+
+
+			[1뎁스]
+			- 활성화 대상  : .navMb__link
+			- 활성화 클래스 : .nav__link--active
+			- 활성화 아이탬 attr : aria-current="page"
+			- 1뎁스는 활성화는 클래스외에 aria도 같이 붙는다.
+
+			비활성 : <a class="navMb__link" href="#">
+			활성 :   <a class="navMb__link nav__link--active" href="#" aria-current="page">
+
+
+			[2뎁스]
+			- 활성화 대상  : .navMb-twodepth__link
+			- 활성화 클래스 : .nav-sub__link--active
+
+			비활성 : <a class="nav-sub__link" href="#">
+			활성 :   <a class="nav-sub__link nav-sub__link--active" href="#">
+		-->
+		<div id="navMobile" class="nav-mobile" tabindex="-1">
+			<div class="navMb__container">
+				<div class="navMb__inner">
+					<div class="util">
+						<span class="select">
+							<select>
+								<option>SK E&amp;S</option>
+							</select>
+						</span>
+						<button type="button"><em>로그아웃</em></button>
+					</div>
+					<ul class="navMb_list">
+						<li class="navMb__item">
+							<a href="javascript:void(0);" class="navMb__link" aria-haspopup="true" aria-expanded="false"><span>계약</span></a>
+							<ul class="navMb-twodepth__list">
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../contract/ppa/직접PPA_공급개별계약_목록.html">직접PPA <span>$공급$</span> 개별 계약</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../contract/ppa_group/직접PPA_공급그룹계약_목록.html">직접PPA <span>$공급$</span> 그룹 계약</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../contract/ppa_final/직접PPA_최종계약_목록.html">직접PPA 최종 계약</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../contract/vppa/VPPA_공급계약_목록.html">V.PPA 계약</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../contract/supply/보장공급량관리_목록.html">보장공급량 관리</a></li>
+							</ul>
+						</li>
+						<li class="navMb__item">
+							<a href="javascript:void(0);" class="navMb__link" aria-haspopup="true" aria-expanded="false"><span>대금정산</span></a>
+							<ul class="navMb-twodepth__list">
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../calculation/ppa/직접PPA대금_공급_목록.html">직접PPA 대금</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../calculation/ppa_rec/직접PPA초과발전REC대금_공급_목록.html">직접PPA 초과발전REC 대금</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../calculation/vppa/VPPA대금_공급_목록.html">V.PPA 대금</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../calculation/deposit/입금확인요청_목록.html">입금 확인 요청</a></li>
+							</ul>
+						</li>
+						<li class="navMb__item">
+							<a href="javascript:void(0);" class="navMb__link" aria-haspopup="true" aria-expanded="false"><span>계좌</span></a>
+							<ul class="navMb-twodepth__list">
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../account/deposit/입금계좌관리_목록.html">입금계좌 관리</a></li>
+							</ul>
+						</li>
+						<li class="navMb__item">
+							<a href="javascript:void(0);" class="navMb__link" aria-haspopup="true" aria-expanded="false"><span>마이페이지</span></a>
+							<ul class="navMb-twodepth__list">
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../mypage/schedule/대금정산일정.html">대금정산 일정</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../mypage/info/사업자정보관리_목록.html">사업자정보 관리</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../mypage/account/통합계정관리_목록.html">통합계정 관리</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../mypage/password/비밀번호재설정_step1.html">비밀번호 재설정</a></li>
+							</ul>
+						</li>
+						<li class="navMb__item">
+							<a href="javascript:void(0);" class="navMb__link" aria-haspopup="true" aria-expanded="false"><span>설정</span></a>
+							<ul class="navMb-twodepth__list">
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../setting/notice/공지사항_목록.html">공지사항</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../setting/qna/1:1문의_목록.html">1:1 문의</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+<!-- ============= [e]헤더 공통 ============= -->
+
+
+
+
+
+<!-- ============= [s]페이지 컨텐츠 ============= -->
+	<main id="main">
+
+		<div class="sub">
+			<!-- container -->
+			<div class="container">
+				<h2 class="page__title">
+					<span>직접PPA <span>공급</span> 개별 계약</span>
+				</h2>
+				<!-- 계약정보 -->
+				<div class="stitle">
+					<span>계약 정보</span>
+				</div>
+				<!-- 반응형 테이블 : 모바일에서 최초 노출 3-4건, 이후 더보기('mb__more' class 사용) -->
+				<!-- 
+					계약 상태값
+					계약 등록 : <span class="statusText status--request">계약등록</span>
+					적용 필요 : <span class="statusText status--need">적용필요</span>
+					계약 완료 : <span class="statusText status--success">계약완료</span>
+					계약 해지 : <span class="statusText status--cancel">계약해지</span>
+				 -->
+				<div class="tableBox mb__more pdl0">
+					<table class="tbl__type__b fixed responsive">
+						<caption>계약 정보 목록</caption>
+						<colgroup>
+							<col style="width:20%;">
+							<col style="width:30%;">
+							<col style="width:20%;">
+							<col style="width:30%;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">계약번호</th>
+								<td class="text-left">23-S000012</td>
+								<th scope="row">계약상태</th>
+								<td class="text-left">
+									<span class="statusText status--request">계약등록</span>
+									<span class="statusText status--need">적용필요</span>
+									<span class="statusText status--success">계약완료</span>
+									<span class="statusText status--cancel">계약해지</span>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">상호명</th>
+								<td class="text-left">써니에너지2호 주식회사</td>
+								<th scope="row">사업자 등록번호</th>
+								<td class="text-left">120-12-12334</td>
+							</tr>
+							<tr>
+								<th scope="row">대표자명</th>
+								<td class="text-left">박서보</td>
+								<th scope="row">전력시장 회원사코드</th>
+								<td class="text-left">1201536</td>
+							</tr>
+							<tr>
+								<th scope="row">주소(본사)</th>
+								<td class="text-left" colspan="3">충청남도 금천군 금산읍 인삼약초로 23-221호(중도리, 방타운)</td>
+							</tr>
+							<tr>
+								<th scope="row">주소(사업장 소재지)</th>
+								<td class="text-left" colspan="3">충청남도 금천군 금산읍 인삼약초로 23-221호(중도리, 방타운)</td>
+							</tr>
+							<tr>
+								<th scope="row">계약일자</th>
+								<td class="text-left">2023-05-22</td>
+								<th scope="row">계약일</th>
+								<td class="text-left">20년(7529일)</td>
+							</tr>
+							<tr>
+								<th scope="row">계약 시작일</th>
+								<td class="text-left">2023-05-22</td>
+								<th scope="row">계약 종료일</th>
+								<td class="text-left">2023-05-22</td>
+							</tr>
+							<tr>
+								<th scope="row">연간 보장공급량(MWh)</th>
+								<td class="text-left">1,005</td>
+								<th scope="row">공급단가(원 / kWh)</th>
+								<td class="text-left">120</td>
+							</tr>
+							<tr>
+								<th scope="row">비고</th>
+								<td class="text-left" colspan="3">비고입니다.</td>
+							</tr>
+							<tr>
+								<th scope="row">KPX 등록파일</th>
+								<td class="text-left" colspan="3">
+									<div class="downloadForm">
+									    <ul>
+									        <li><a href="#">계약서.pdf</a></li>
+									    </ul>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //반응형 테이블 -->
+				<div class="btn__set mb__more__btn">
+					<button type="submit" class="btn darkgray lg" onclick="ui.popLayer.open('popDetail1')">더보기</button>
+				</div>
+				<!-- //계약정보 -->
+				
+				<!-- 계약 담당자 정보 -->
+				<div class="stitle">
+					<span>계약 담당자 정보(청구/통지서 및 SMS 수신)</span>
+					<div class="float-right">
+						<button type="button" class="btn gray" onclick="ui.popLayer.open('popMngr')">담당자 정보 변경</button>
+					</div>
+				</div>
+				<!-- 반응형 테이블 -->
+				<div class="tableBox pdl0">
+					<table class="tbl__type__b fixed responsive">
+						<caption>계약 담당자 정보</caption>
+						<colgroup>
+							<col style="width:20%;">
+							<col style="width:30%;">
+							<col style="width:20%;">
+							<col style="width:30%;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">담당자 명</th>
+								<td class="text-left">김환기</td>
+								<th scope="row">담당자 전화번호</th>
+								<td class="text-left" colspan="3">010-1234-1234</td>
+							</tr>
+							<tr>
+								<th scope="row">담당자 이메일</th>
+								<td class="text-left" colspan="3">kim9592@gmail.com</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- 반응형 테이블 -->
+				<!-- //계약 담당자 정보 -->
+				
+				<!-- 발전기 정보 -->
+				<div class="stitle">
+					<span>발전기 정보</span>
+				</div>
+				<!-- 반응형 테이블 : 모바일에서 최초 노출 3-4건, 이후 더보기('mb__more' class 사용) -->
+				<div class="tableBox mb__more pdl0">
+					<table class="tbl__type__b fixed responsive">
+						<caption>발전기 정보 목록</caption>
+						<colgroup>
+							<col style="width:20%;">
+							<col style="width:30%;">
+							<col style="width:20%;">
+							<col style="width:30%;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">발전기 코드</th>
+								<td class="text-left">NF1150</td>
+								<th scope="row">발전기 명</th>
+								<td class="text-left">써니에너지2호(주) 태양광발전소</td>
+							</tr>
+							<tr>
+								<th scope="row">발전기 주소</th>
+								<td class="text-left" colspan="3">충청남도 금천군 금산읍 인삼약초로 23-221호(중도리, 방타운)</td>
+							</tr>
+							<tr>
+								<th scope="row">발전원</th>
+								<td class="text-left">태양광</td>
+								<th scope="row">송·배전망</th>
+								<td class="text-left">배전고압망</td>
+							</tr>
+							<tr>
+								<th scope="row">설비용량(kW)</th>
+								<td class="text-left">999,8</td>
+								<th scope="row">발전형태</th>
+								<td class="text-left" colspan="3">off-site</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //반응형 테이블 -->
+				<div class="btn__set mb__more__btn">
+					<button type="submit" class="btn darkgray lg" onclick="ui.popLayer.open('popDetail2')">더보기</button>
+				</div>
+				<!-- //발전기 정보 -->
+				
+				<!-- 초과발전 REC 정산 정보 -->
+				<div class="stitle">
+					<span>초과발전 REC 정산 정보</span>
+				</div>
+				<!-- 반응형 테이블 : 모바일에서 최초 노출 3-4건, 이후 더보기('mb__more' class 사용) -->
+				<div class="tableBox mb__more pdl0">
+					<table class="tbl__type__b fixed responsive">
+						<caption>초과발전 REC 정산 정보 목록</caption>
+						<colgroup>
+							<col style="width:20%;">
+							<col style="width:30%;">
+							<col style="width:20%;">
+							<col style="width:30%;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">계약전환 여부</th>
+								<td class="text-left">N</td>
+								<th scope="row">계약전환 여부 - 비고</th>
+								<td class="text-left">120-12-12334</td>
+							</tr>
+							<tr>
+								<th scope="row">REC 가중치</th>
+								<td class="text-left" colspan="3">1:1</td>
+							</tr>
+							<tr>
+								<th scope="row">REC 정산주기</th>
+								<td class="text-left">분기별</td>
+								<th scope="row">REC 정산방식</th>
+								<td class="text-left">One-way</td>
+							</tr>
+							<tr>
+								<th scope="row">REC 하한가(원 / REC)</th>
+								<td class="text-left">0.1</td>
+								<th scope="row">REC 고정가(원 / REC)</th>
+								<td class="text-left">50,000</td>
+							</tr>
+							<tr>
+								<th scope="row">REC 거래수수료(원 / kWh)</th>
+								<td class="text-left">120</td>
+								<th scope="row">REC 기준단가(원 / kWh)</th>
+								<td class="text-left">130</td>
+							</tr>
+							<tr>
+								<th scope="row">Upside Share(%)</th>
+								<td class="text-left">50</td>
+								<th scope="row">Downside Share(원 / kWh)</th>
+								<td class="text-left">130</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //반응형 테이블 -->
+				<div class="btn__set mb__more__btn">
+					<button type="submit" class="btn darkgray lg" onclick="ui.popLayer.open('popDetail3')">더보기</button>
+				</div>
+				<!-- //초과발전 REC 정산 정보 -->
+				
+				<!-- 입금계좌 정보 -->
+				<div class="stitle">
+					<span>입금계좌 정보</span>
+					<div class="float-right">
+						<button type="button" class="btn gray" onclick="ui.popLayer.open('popAcnt')">입금계좌 변경</button>
+					</div>
+				</div>
+				<!-- 반응형 테이블 -->
+				<div class="tableBox pdl0">
+					<table class="tbl__type__b fixed responsive">
+						<caption>입금계좌 정보 목록</caption>
+						<colgroup>
+							<col style="width:20%;">
+							<col style="width:80%;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">적용 계좌</th>
+								<td class="text-left">우리은행, 12345****, 박*보</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //반응형 테이블 -->
+				<!-- //입금계좌 정보 -->
+				
+				<!-- 계약 필수 서류 -->
+				<div class="stitle">
+					<span>계약 필수 서류</span>
+					<div class="float-right">
+						<button type="button" class="btn gray" onclick="ui.popLayer.open('popContract')">첨부 서류 변경</button>
+					</div>
+				</div>
+				<!-- 반응형 테이블 -->
+				<!-- 
+					변경 상태값
+					변경 요청 :  <span class="statusText status--request">변경 요청</span>
+					반려 : <span class="statusText status--reject">반려</span>
+					승인 : <span class="statusText status--success">승인</span>
+				 -->
+				<div class="tableBox pdl0">
+					<table class="tbl__type__b fixed responsive">
+						<caption>계약 필수 서류 목록</caption>
+						<colgroup>
+							<col style="width:20%;">
+							<col style="width:80%;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">MOU/NDA</th>
+								<td class="text-left">
+									<div class="doc__list">
+										<span class="doc__date">2024-12-12</span>
+										<div class="downloadForm dp-iblock">
+										    <ul>
+										        <li><a href="#">KakaoTalk_152915790.png</a></li>
+										    </ul>
+										</div>
+										 <span class="statusText status--request">변경 요청</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">계약서</th>
+								<td class="text-left">
+									<div class="doc__list">
+										<span class="doc__date">2024-12-12</span>
+										<div class="downloadForm dp-iblock">
+										    <ul>
+										        <li><a href="#">KakaoTalk_20220801_152915790.png</a></li>
+										    </ul>
+										</div>
+										 <span class="statusText status--success">승인</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">기타 합의서</th>
+								<td class="text-left">
+									<div class="doc__list">
+										<span class="doc__date">2024-12-12</span>
+										<div class="downloadForm dp-iblock">
+										    <ul>
+										        <li><a href="#">KakaoTalk_20220801_152915790.png</a></li>
+										    </ul>
+										</div>
+										 <span class="statusText status--success">승인</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">발전사업 허가증</th>
+								<td class="text-left">
+									<div class="doc__list">
+										<span class="doc__date">2024-12-12</span>
+										<div class="downloadForm dp-iblock">
+										    <ul>
+										        <li><a href="#">KakaoTalk_20220801_152915790.png</a></li>
+										    </ul>
+										</div>
+										 <span class="statusText status--success">승인</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">개발행위 허가증</th>
+								<td class="text-left">
+									<div class="doc__list">
+										<span class="doc__date">2024-12-12</span>
+										<div class="downloadForm dp-iblock">
+										    <ul>
+										        <li><a href="#">KakaoTalk_20220801_152915790.png</a></li>
+										    </ul>
+										</div>
+										 <span class="statusText status--success">승인</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">사용 전 검사 확인증</th>
+								<td class="text-left">
+									<div class="doc__list">
+										<span class="doc__date">2024-12-12</span>
+										<div class="downloadForm dp-iblock">
+										    <ul>
+										        <li><a href="#">KakaoTalk_20220801_152915790.png</a></li>
+										    </ul>
+										</div>
+										 <span class="statusText status--success">승인</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">KPX계량기 봉인(예상)</th>
+								<td class="text-left">
+									<div class="doc__list">
+										<span class="doc__date">2024-12-12</span>
+										<div class="downloadForm dp-iblock">
+										    <ul>
+										        <li><a href="#">KakaoTalk_20220801_152915790.png</a></li>
+										    </ul>
+										</div>
+										 <span class="statusText status--success">승인</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">송배전용 전기설비 이용계약서</th>
+								<td class="text-left">
+									<div class="doc__list">
+										<span class="doc__date">2024-12-12</span>
+										<div class="downloadForm dp-iblock">
+										    <ul>
+										        <li><a href="#">KakaoTalk_20220801_152915790.png</a></li>
+										    </ul>
+										</div>
+										 <span class="statusText status--success">승인</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">RPS 설비 확인서</th>
+								<td class="text-left">
+									<div class="doc__list">
+										<span class="doc__date">2024-12-12</span>
+										<div class="downloadForm dp-iblock">
+										    <ul>
+										        <li><a href="#">KakaoTalk_20220801_152915790.png</a></li>
+										    </ul>
+										</div>
+										 <span class="statusText status--reject">반려</span>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //반응형 테이블 -->
+				<!-- //계약 필수 서류 -->
+				
+				<!-- 사업자 첨부 서류 -->
+				<div class="stitle">
+					<span>사업자 첨부 서류(필요 시 첨부)</span>
+					<div class="float-right">
+						<button type="button" class="btn gray" onclick="ui.popLayer.open('popAttach')">첨부 서류 변경</button>
+					</div>
+				</div>
+				<!-- 반응형 테이블 -->
+				<div class="tableBox pdl0">
+					<table class="tbl__type__b fixed responsive">
+						<caption>첨부 서류 목록</caption>
+						<colgroup>
+							<col style="width:20%;">
+							<col style="width:80%;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">첨부 서류 목록</th>
+								<td class="text-left">
+									<div class="downloadForm">
+									    <ul>
+									        <li><a href="#">SK_ENS_통신증명원.pdf</a></li>
+									        <li><a href="#">SK_ENS_통신증명원 통신증명원 12월 추가서류.pdf</a></li>
+									        <li><a href="#">SK_ENS_통신증명원.pdf</a></li>
+									        <li><a href="#">SK_ENS_통신증명원 통신증명원 12월 추가서류.pdf</a></li>
+									    </ul>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //반응형 테이블 -->
+				<!-- //사업자 첨부 서류 -->
+				<div class="btn__set">
+					<button type="submit" class="btn xl secondary">목록</button>
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		
+		<!-- 페이지 개별 스크립트 -->
+		<script>
+			$(document).ready(function() {
+				ui.nav.act(1,1);
+				
+				//Alert 팝업 오픈
+				ui.popLayer.open('popSave');
+				ui.popLayer.open('popUpload');
+				ui.popLayer.open('popSuccess');
+			});
+		</script>
+		<!-- // 페이지 개별 스크립트 -->
+		
+	</main>
+
+	<!-- 팝업 레이어 -->
+	<div id="layers" class="layers" >
+		<!--
+			- 레이어는 이안에 위치. 인클루드 위치도 이 곳.
+			- 페이지내에 레이어가 많아서 별도의 파일로 인클루드해서 사용할 시,  article영역만 외부로 빼서 파일로 만들고 인클루드.
+		-->
+		<!-- Layer Popup : 계약 정보 더보기(모바일)  -->
+		<article class="popLayer white" id="popDetail1">
+		    <div class="pbd pop-xl">
+		 
+		        <div class="phd">
+		            <div class="in">
+		                <h3 class="tit">계약 정보</h3>
+		                <button type="button" class="btnPopClose" title="레이어팝업 닫기"><i class="fa fa-times"></i>닫기</button>
+		            </div>
+		        </div>
+		 
+		        <div class="pct">
+		            <div class="poptents">
+						<!-- 반응형 테이블 : 더보기 팝업 내에서는 'mb__more' class 사용 x -->
+						<div class="tableBox pdl0">
+							<table class="tbl__type__b fixed responsive">
+								<caption>계약 정보 목록</caption>
+								<colgroup>
+									<col style="width:20%;">
+									<col style="width:30%;">
+									<col style="width:20%;">
+									<col style="width:30%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">계약번호</th>
+										<td class="text-left">23-S000012</td>
+										<th scope="row">계약상태</th>
+										<td class="text-left">
+											<span class="statusText status--success">계약완료</span>
+											<span class="statusText status--wait">해지</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">상호명</th>
+										<td class="text-left">써니에너지2호 주식회사</td>
+										<th scope="row">사업자 등록번호</th>
+										<td class="text-left">120-12-12334</td>
+									</tr>
+									<tr>
+										<th scope="row">대표자명</th>
+										<td class="text-left">박서보</td>
+										<th scope="row">전력시장 회원사코드</th>
+										<td class="text-left">1201536</td>
+									</tr>
+									<tr>
+										<th scope="row">주소(본사)</th>
+										<td class="text-left" colspan="3">충청남도 금천군 금산읍 인삼약초로 23-221호(중도리, 방타운)</td>
+									</tr>
+									<tr>
+										<th scope="row">주소(사업장 소재지)</th>
+										<td class="text-left" colspan="3">충청남도 금천군 금산읍 인삼약초로 23-221호(중도리, 방타운)</td>
+									</tr>
+									<tr>
+										<th scope="row">계약일자</th>
+										<td class="text-left">2023-05-22</td>
+										<th scope="row">계약일</th>
+										<td class="text-left">20년(7529일)</td>
+									</tr>
+									<tr>
+										<th scope="row">계약 시작일</th>
+										<td class="text-left">2023-05-22</td>
+										<th scope="row">계약 종료일</th>
+										<td class="text-left">2023-05-22</td>
+									</tr>
+									<tr>
+										<th scope="row">연간 보장공급량(MWh)</th>
+										<td class="text-left">1,005</td>
+										<th scope="row">공급단가(원 / kWh)</th>
+										<td class="text-left">120</td>
+									</tr>
+									<tr>
+										<th scope="row">비고</th>
+										<td class="text-left" colspan="3">비고입니다.</td>
+									</tr>
+									<tr>
+										<th scope="row">KPX 등록파일</th>
+										<td class="text-left" colspan="3">
+											<div class="downloadForm">
+											    <ul>
+											        <li><a href="#">계약서.pdf</a></li>
+											    </ul>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //반응형 테이블 -->
+		            </div>
+		        </div>
+		 
+		        <div class="pbt">
+		            <div class="btn__set">
+		                <button type="button" class="btn secondary btnPopClose">닫기</button>
+		            </div>
+		        </div>
+		 
+		    </div>
+		</article>
+		<!-- //Layer Popup : 계약 정보 더보기(모바일)  -->
+		
+		<!-- Layer Popup : 발전기 정보 더보기(모바일)  -->
+		<article class="popLayer white" id="popDetail2">
+		    <div class="pbd pop-xl">
+		 
+		        <div class="phd">
+		            <div class="in">
+		                <h3 class="tit">발전기 정보</h3>
+		                <button type="button" class="btnPopClose" title="레이어팝업 닫기"><i class="fa fa-times"></i>닫기</button>
+		            </div>
+		        </div>
+		 
+		        <div class="pct">
+		            <div class="poptents">
+		            	<!-- 반응형 테이블 : 더보기 팝업 내에서는 'mb__more' class 사용 x -->
+						<div class="tableBox pdl0">
+							<table class="tbl__type__b fixed responsive">
+								<caption>초과발전 REC 정산 정보 목록</caption>
+								<colgroup>
+									<col style="width:20%;">
+									<col style="width:30%;">
+									<col style="width:20%;">
+									<col style="width:30%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">계약전환 여부</th>
+										<td class="text-left">N</td>
+										<th scope="row">계약전환 여부 - 비고</th>
+										<td class="text-left">120-12-12334</td>
+									</tr>
+									<tr>
+										<th scope="row">REC 가중치</th>
+										<td class="text-left" colspan="3">1:1</td>
+									</tr>
+									<tr>
+										<th scope="row">REC 정산주기</th>
+										<td class="text-left">분기별</td>
+										<th scope="row">REC 정산방식</th>
+										<td class="text-left">One-way</td>
+									</tr>
+									<tr>
+										<th scope="row">REC 하한가(원 / REC)</th>
+										<td class="text-left">0.1</td>
+										<th scope="row">REC 고정가(원 / REC)</th>
+										<td class="text-left">50,000</td>
+									</tr>
+									<tr>
+										<th scope="row">REC 거래수수료(원 / kWh)</th>
+										<td class="text-left">120</td>
+										<th scope="row">REC 기준단가(원 / kWh)</th>
+										<td class="text-left">130</td>
+									</tr>
+									<tr>
+										<th scope="row">Upside Share(%)</th>
+										<td class="text-left">50</td>
+										<th scope="row">Downside Share(원 / kWh)</th>
+										<td class="text-left">130</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //반응형 테이블 -->
+		            </div>
+		        </div>
+		 
+		        <div class="pbt">
+		            <div class="btn__set">
+		                <button type="button" class="btn secondary btnPopClose">닫기</button>
+		            </div>
+		        </div>
+		 
+		    </div>
+		</article>
+		<!-- //Layer Popup : 발전기 정보 더보기(모바일)  -->
+		
+		<!-- Layer Popup : 초과발전 REC 정산정보 더보기(모바일)  -->
+		<article class="popLayer white" id="popDetail3">
+		    <div class="pbd pop-xl">
+		 
+		        <div class="phd">
+		            <div class="in">
+		                <h3 class="tit">초과발전 REC 정산정보</h3>
+		                <button type="button" class="btnPopClose" title="레이어팝업 닫기"><i class="fa fa-times"></i>닫기</button>
+		            </div>
+		        </div>
+		 
+		        <div class="pct">
+		            <div class="poptents">
+		            	<!-- 반응형 테이블 : 더보기 팝업 내에서는 'mb__more' class 사용 x -->
+						<div class="tableBox pdl0">
+							<table class="tbl__type__b fixed responsive">
+								<caption>초과발전 REC 정산 정보 목록</caption>
+								<colgroup>
+									<col style="width:20%;">
+									<col style="width:30%;">
+									<col style="width:20%;">
+									<col style="width:30%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">계약전환 여부</th>
+										<td class="text-left">N</td>
+										<th scope="row">계약전환 여부 - 비고</th>
+										<td class="text-left">120-12-12334</td>
+									</tr>
+									<tr>
+										<th scope="row">REC 가중치</th>
+										<td class="text-left" colspan="3">1:1</td>
+									</tr>
+									<tr>
+										<th scope="row">REC 정산주기</th>
+										<td class="text-left">분기별</td>
+										<th scope="row">REC 정산방식</th>
+										<td class="text-left">One-way</td>
+									</tr>
+									<tr>
+										<th scope="row">REC 하한가(원 / REC)</th>
+										<td class="text-left">0.1</td>
+										<th scope="row">REC 고정가(원 / REC)</th>
+										<td class="text-left">50,000</td>
+									</tr>
+									<tr>
+										<th scope="row">REC 거래수수료(원 / kWh)</th>
+										<td class="text-left">120</td>
+										<th scope="row">REC 기준단가(원 / kWh)</th>
+										<td class="text-left">130</td>
+									</tr>
+									<tr>
+										<th scope="row">Upside Share(%)</th>
+										<td class="text-left">50</td>
+										<th scope="row">Downside Share(원 / kWh)</th>
+										<td class="text-left">130</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //반응형 테이블 -->
+		            </div>
+		        </div>
+		 
+		        <div class="pbt">
+		            <div class="btn__set">
+		                <button type="button" class="btn secondary btnPopClose">닫기</button>
+		            </div>
+		        </div>
+		 
+		    </div>
+		</article>
+		<!-- //Layer Popup : 초과발전 REC 정산정보 더보기(모바일)  -->
+		
+		<!-- Layer Popup : 계약 담당자 정보 변경  -->
+		<article class="popLayer white" id="popMngr">
+		    <div class="pbd pop-xl">
+		 
+		        <div class="phd">
+		            <div class="in">
+		                <h3 class="tit">계약 담당자 정보 변경</h3>
+		                <button type="button" class="btnPopClose" title="레이어팝업 닫기"><i class="fa fa-times"></i>닫기</button>
+		            </div>
+		        </div>
+		 
+		        <div class="pct">
+		            <div class="poptents">
+						<!-- 계약 담당자 정보 입력 -->
+						<!-- 반응형 테이블 -->
+						<div class="tableBox pdl0">
+							<table class="tbl__type__b fixed responsive">
+								<caption>계약 담당자 정보 목록</caption>
+								<colgroup>
+									<col style="width:20%;">
+									<col style="width:80%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">담당자명</th>
+										<td class="text-left">
+											<span class="input">
+												<input type="text" placeholder=" 담당자명 입력 " oninput="" maxlength="11">
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">담당자 전화번호</th>
+										<td class="text-left">
+											<span class="input">
+												<input type="text" placeholder=" ‘-’ 없이 입력 " oninput="" maxlength="11">
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">담당자 이메일</th>
+										<td class="text-left">
+											<div class="emailForm">
+											    <span class="input">
+											        <input type="text" class="email_addr" placeholder="이메일 주소" value="">
+											    </span>
+											    <span class="input">
+											        <input type="text" class="email_domain" placeholder="도메인" value="">
+											    </span>
+											    <span class="select">
+											        <select class="domain__select">
+											            <option value="choice">선택</option>
+											            <option value="direct">직접입력</option>
+											            <option value="naver">naver.com</option>
+											            <option value="daum">daum.net</option>
+											            <option value="gmail" selected="">gmail.com</option>
+											        </select>
+											    </span>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //반응형 테이블 -->
+						<!-- //계약 담당자 정보 입력 -->
+						<div class="info__list alert account">
+							<ul>
+								<li>본 계약 담당자 정보로 PPA/V.PPA 대금 정산 시 청구서 또는 SMS를 수신합니다.</li>
+							</ul>
+						</div>
+		            </div>
+		        </div>
+		 
+		        <div class="pbt">
+		            <div class="btn__set">
+		                <button type="button" class="btn secondary btnPopClose">취소</button>
+		                <button type="button" class="btn primary btnPopClose">저장</button>
+		            </div>
+		        </div>
+		 
+		    </div>
+		</article>
+		<!-- //Layer Popup : 계약 담당자 정보 변경  -->
+		
+		<!-- Layer Popup : 입금 계좌 변경  -->
+		<article class="popLayer white" id="popAcnt">
+		    <div class="pbd pop-xl">
+		 
+		        <div class="phd">
+		            <div class="in">
+		                <h3 class="tit">입금 계좌 변경</h3>
+		                <button type="button" class="btnPopClose" title="레이어팝업 닫기"><i class="fa fa-times"></i>닫기</button>
+		            </div>
+		        </div>
+		 
+		        <div class="pct">
+		            <div class="poptents">
+						<!-- 반응형 테이블 -->
+						<div class="tableBox pdl0">
+							<table class="tbl__type__b fixed responsive">
+								<caption>입금 계좌 정보 목록</caption>
+								<colgroup>
+									<col style="width:20%;">
+									<col style="width:80%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">적용 계좌</th>
+										<td class="text-left">
+											<span class="select">
+											    <select class="domain__select">
+											        <option value="choice">우리은행, 123345*******,리*보</option>
+											    </select>
+											</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //반응형 테이블 -->
+		            </div>
+		        </div>
+		 
+		        <div class="pbt">
+		            <div class="btn__set">
+		                <button type="button" class="btn secondary btnPopClose">취소</button>
+		                <button type="button" class="btn primary btnPopClose">저장</button>
+		            </div>
+		        </div>
+		 
+		    </div>
+		</article>
+		<!-- //Layer Popup : 입금 계좌 변경  -->
+		
+		<!-- Layer Popup : 계약 필수 서류 변경  -->
+		<article class="popLayer white" id="popContract">
+		    <div class="pbd pop-xl">
+		 
+		        <div class="phd">
+		            <div class="in">
+		                <h3 class="tit">계약 필수 서류 - 첨부서류 변경요청</h3>
+		                <button type="button" class="btnPopClose" title="레이어팝업 닫기"><i class="fa fa-times"></i>닫기</button>
+		            </div>
+		        </div>
+		 
+		        <div class="pct">
+		            <div class="poptents">
+						<!-- 테이블 -->
+						<div class="tableBox pdl0">
+							<table class="tbl__type__b fixed">
+								<caption>계약 필수 서류 변경 목록</caption>
+								<colgroup>
+									<col style="width:30%;">
+									<col style="width:70%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">MOU/NDA</th>
+										<td class="text-left">
+											<span class="input ui-input-date">
+											    <input type="text" class="datepicker" placeholder="YYYY-MM-DD" value="" readonly>
+											</span>
+											<!--  default edit - 1개 -->
+											<div class="uploadForm dp-iblock va-m">
+											    <ul class="add__attach__list">
+											        <li>
+											            <span class="add__attach__file on" data-ui="attach">
+											                <span class="btn__attach">
+											                    <label class="fileButton">파일선택<input type="file" class="fileInput" accept=".jpg, .jpeg, .bmp, .gif, .png, .tif, .pdf, .hwp, .doc"></label>
+											                </span>
+											                <span class="file">
+											                    <span class="loc">레이풀시스템_사업자등록증.pdf</span>
+											                    <button type="button" class="delete">삭제</button>
+											                </span>
+											            </span>
+											        </li>
+											    </ul>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">계약서</th>
+										<td class="text-left">
+											<span class="input ui-input-date">
+											    <input type="text" class="datepicker" placeholder="YYYY-MM-DD" value="" readonly>
+											</span>
+											<!--  default edit - 1개 -->
+											<div class="uploadForm dp-iblock va-m">
+											    <ul class="add__attach__list">
+											        <li>
+											            <span class="add__attach__file on" data-ui="attach">
+											                <span class="btn__attach">
+											                    <label class="fileButton">파일선택<input type="file" class="fileInput" accept=".jpg, .jpeg, .bmp, .gif, .png, .tif, .pdf, .hwp, .doc"></label>
+											                </span>
+											                <span class="file">
+											                    <span class="loc">레이풀시스템_사업자등록증.pdf</span>
+											                    <button type="button" class="delete">삭제</button>
+											                </span>
+											            </span>
+											        </li>
+											    </ul>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">기타 합의서</th>
+										<td class="text-left">
+											<span class="input ui-input-date">
+											    <input type="text" class="datepicker" placeholder="YYYY-MM-DD" value="" readonly>
+											</span>
+											<!--  default edit - 1개 -->
+											<div class="uploadForm dp-iblock va-m">
+											    <ul class="add__attach__list">
+											        <li>
+											            <span class="add__attach__file on" data-ui="attach">
+											                <span class="btn__attach">
+											                    <label class="fileButton">파일선택<input type="file" class="fileInput" accept=".jpg, .jpeg, .bmp, .gif, .png, .tif, .pdf, .hwp, .doc"></label>
+											                </span>
+											                <span class="file">
+											                    <span class="loc">레이풀시스템_사업자등록증.pdf</span>
+											                    <button type="button" class="delete">삭제</button>
+											                </span>
+											            </span>
+											        </li>
+											    </ul>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">발전사업 허가증</th>
+										<td class="text-left">
+											<span class="input ui-input-date">
+											    <input type="text" class="datepicker" placeholder="YYYY-MM-DD" value="" readonly>
+											</span>
+											<!--  default edit - 1개 -->
+											<div class="uploadForm dp-iblock va-m">
+											    <ul class="add__attach__list">
+											        <li>
+											            <span class="add__attach__file on" data-ui="attach">
+											                <span class="btn__attach">
+											                    <label class="fileButton">파일선택<input type="file" class="fileInput" accept=".jpg, .jpeg, .bmp, .gif, .png, .tif, .pdf, .hwp, .doc"></label>
+											                </span>
+											                <span class="file">
+											                    <span class="loc">레이풀시스템_사업자등록증.pdf</span>
+											                    <button type="button" class="delete">삭제</button>
+											                </span>
+											            </span>
+											        </li>
+											    </ul>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">개발행위 허가증</th>
+										<td class="text-left">
+											<span class="input ui-input-date">
+											    <input type="text" class="datepicker" placeholder="YYYY-MM-DD" value="" readonly>
+											</span>
+											<!--  default edit - 1개 -->
+											<div class="uploadForm dp-iblock va-m">
+											    <ul class="add__attach__list">
+											        <li>
+											            <span class="add__attach__file on" data-ui="attach">
+											                <span class="btn__attach">
+											                    <label class="fileButton">파일선택<input type="file" class="fileInput" accept=".jpg, .jpeg, .bmp, .gif, .png, .tif, .pdf, .hwp, .doc"></label>
+											                </span>
+											                <span class="file">
+											                    <span class="loc">레이풀시스템_사업자등록증.pdf</span>
+											                    <button type="button" class="delete">삭제</button>
+											                </span>
+											            </span>
+											        </li>
+											    </ul>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">사용전 검사 확인증</th>
+										<td class="text-left">
+											<span class="input ui-input-date">
+											    <input type="text" class="datepicker" placeholder="YYYY-MM-DD" value="" readonly>
+											</span>
+											<!--  default edit - 1개 -->
+											<div class="uploadForm dp-iblock va-m">
+											    <ul class="add__attach__list">
+											        <li>
+											            <span class="add__attach__file on" data-ui="attach">
+											                <span class="btn__attach">
+											                    <label class="fileButton">파일선택<input type="file" class="fileInput" accept=".jpg, .jpeg, .bmp, .gif, .png, .tif, .pdf, .hwp, .doc"></label>
+											                </span>
+											                <span class="file">
+											                    <span class="loc">레이풀시스템_사업자등록증.pdf</span>
+											                    <button type="button" class="delete">삭제</button>
+											                </span>
+											            </span>
+											        </li>
+											    </ul>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">KPX계량기 봉인(예상)</th>
+										<td class="text-left">
+											<span class="input ui-input-date">
+											    <input type="text" class="datepicker" placeholder="YYYY-MM-DD" value="" readonly>
+											</span>
+											<!--  default edit - 1개 -->
+											<div class="uploadForm dp-iblock va-m">
+											    <ul class="add__attach__list">
+											        <li>
+											            <span class="add__attach__file on" data-ui="attach">
+											                <span class="btn__attach">
+											                    <label class="fileButton">파일선택<input type="file" class="fileInput" accept=".jpg, .jpeg, .bmp, .gif, .png, .tif, .pdf, .hwp, .doc"></label>
+											                </span>
+											                <span class="file">
+											                    <span class="loc">레이풀시스템_사업자등록증.pdf</span>
+											                    <button type="button" class="delete">삭제</button>
+											                </span>
+											            </span>
+											        </li>
+											    </ul>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">송배전용 전기설비 이용계약서</th>
+										<td class="text-left">
+											<span class="input ui-input-date">
+											    <input type="text" class="datepicker" placeholder="YYYY-MM-DD" value="" readonly>
+											</span>
+											<!--  default edit - 1개 -->
+											<div class="uploadForm dp-iblock va-m">
+											    <ul class="add__attach__list">
+											        <li>
+											            <span class="add__attach__file on" data-ui="attach">
+											                <span class="btn__attach">
+											                    <label class="fileButton">파일선택<input type="file" class="fileInput" accept=".jpg, .jpeg, .bmp, .gif, .png, .tif, .pdf, .hwp, .doc"></label>
+											                </span>
+											                <span class="file">
+											                    <span class="loc">레이풀시스템_사업자등록증.pdf</span>
+											                    <button type="button" class="delete">삭제</button>
+											                </span>
+											            </span>
+											        </li>
+											    </ul>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">RPS 설비 확인서</th>
+										<td class="text-left">
+											<span class="input ui-input-date">
+											    <input type="text" class="datepicker" placeholder="YYYY-MM-DD" value="" readonly>
+											</span>
+											<!--  default edit - 1개 -->
+											<div class="uploadForm dp-iblock va-m">
+											    <ul class="add__attach__list">
+											        <li>
+											            <span class="add__attach__file on" data-ui="attach">
+											                <span class="btn__attach">
+											                    <label class="fileButton">파일선택<input type="file" class="fileInput" accept=".jpg, .jpeg, .bmp, .gif, .png, .tif, .pdf, .hwp, .doc"></label>
+											                </span>
+											                <span class="file">
+											                    <span class="loc">레이풀시스템_사업자등록증.pdf</span>
+											                    <button type="button" class="delete">삭제</button>
+											                </span>
+											            </span>
+											        </li>
+											    </ul>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- // 테이블 -->
+						<div class="info__list alert account">
+							<ul>
+								<li>파일명이 동일한 경우 업로드 불가하며, 계약 서류 변경 요청시 관리자 승인 이후 반영됩니다.</li>
+								<li>이미 변경요청이 진행 중인 계약 서류는 관리자 처리 후 재요청 가능합니다.</li>
+							</ul>
+						</div>
+		            </div>
+		        </div>
+		 
+		        <div class="pbt">
+		            <div class="btn__set">
+		                <button type="button" class="btn secondary btnPopClose">취소</button>
+		                <button type="button" class="btn primary btnPopClose">저장</button>
+		            </div>
+		        </div>
+		 
+		    </div>
+		</article>
+		<!-- //Layer Popup : 계약 필수 서류 변경  -->
+		
+		<!-- Layer Popup : 첨부서류 변경  -->
+		<article class="popLayer white" id="popAttach">
+		    <div class="pbd pop-xl">
+		 
+		        <div class="phd">
+		            <div class="in">
+		                <h3 class="tit">사업자 첨부 서류 등록</h3>
+		                <button type="button" class="btnPopClose" title="레이어팝업 닫기"><i class="fa fa-times"></i>닫기</button>
+		            </div>
+		        </div>
+		 
+		        <div class="pct">
+		            <div class="poptents">
+		            	<!-- 첨부서류 목록 -->
+						<div class="tableBox pdl0">
+							<table class="tbl__type__b fixed responsive">
+								<caption>첨부 서류 목록</caption>
+								<colgroup>
+									<col style="width:20%;">
+									<col style="width:80%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">첨부 서류 목록</th>
+										<td class="text-left">
+											<!-- default edit - 5개 -->
+											<div class="uploadForm">
+											    <span class="add__attach__info pdl0">※ 첨부파일은 5개만 등록할 수 있습니다.</span>
+											    <button type="button" class="add__attach btn sm">첨부파일 추가</button>
+											    <ul class="add__attach__list">
+											        <li>
+											            <span class="add__attach__file on" data-ui="attach">
+											                <span class="btn__attach">
+											                    <label class="fileButton">파일선택<input type="file" class="fileInput" accept=".jpg, .jpeg, .bmp, .gif, .png, .tif, .pdf, .hwp, .doc"></label>
+											                </span>
+											                <span class="file">
+											                    <span class="loc">레이풀시스템_사업자등록증레이풀시스템_사업자등록증레이풀시스템_사업자등록증.pdf</span>
+											                    <button type="button" class="delete">삭제</button>
+											                </span>
+											            </span>
+											        </li>
+											        <li>
+											            <span class="add__attach__file on" data-ui="attach">
+											                <span class="btn__attach">
+											                    <label class="fileButton">파일선택<input type="file" class="fileInput" accept=".jpg, .jpeg, .bmp, .gif, .png, .tif, .pdf, .hwp, .doc"></label>
+											                </span>
+											                <span class="file">
+											                    <span class="loc">레이풀시스템_사업자등록증.pdf</span>
+											                    <button type="button" class="delete">삭제</button>
+											                </span>
+											            </span>
+											        </li>
+											        <li>
+											            <span class="add__attach__file on" data-ui="attach">
+											                <span class="btn__attach">
+											                    <label class="fileButton">파일선택<input type="file" class="fileInput" accept=".jpg, .jpeg, .bmp, .gif, .png, .tif, .pdf, .hwp, .doc"></label>
+											                </span>
+											                <span class="file">
+											                    <span class="loc">레이풀시스템_사업자등록증레이풀시스템_사업자등록증레이풀시스템_사업자등록증.pdf</span>
+											                    <button type="button" class="delete">삭제</button>
+											                </span>
+											            </span>
+											        </li>
+											        <li>
+											            <span class="add__attach__file on" data-ui="attach">
+											                <span class="btn__attach">
+											                    <label class="fileButton">파일선택<input type="file" class="fileInput" accept=".jpg, .jpeg, .bmp, .gif, .png, .tif, .pdf, .hwp, .doc"></label>
+											                </span>
+											                <span class="file">
+											                    <span class="loc">레이풀시스템_사업자등록증.pdf</span>
+											                    <button type="button" class="delete">삭제</button>
+											                </span>
+											            </span>
+											        </li>
+											        <li>
+											            <span class="add__attach__file on" data-ui="attach">
+											                <span class="btn__attach">
+											                    <label class="fileButton">파일선택<input type="file" class="fileInput" accept=".jpg, .jpeg, .bmp, .gif, .png, .tif, .pdf, .hwp, .doc"></label>
+											                </span>
+											                <span class="file">
+											                    <span class="loc">레이풀시스템_사업자등록증.pdf</span>
+											                    <button type="button" class="delete">삭제</button>
+											                </span>
+											            </span>
+											        </li>
+											    </ul>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //첨부서류 목록 -->
+		            </div>
+		        </div>
+		 
+		        <div class="pbt">
+		            <div class="btn__set">
+		                <button type="button" class="btn secondary btnPopClose">취소</button>
+		                <button type="button" class="btn primary btnPopClose">저장</button>
+		            </div>
+		        </div>
+		 
+		    </div>
+		</article>
+		<!-- //Layer Popup : 첨부서류 변경  -->
+		
+		<!-- Alert Layer Popup : 정보 저장  -->
+		<article class="popLayer" id="popSave">
+			<div class="pbd pop-sm">
+
+				<div class="phd">
+					<div class="in">
+						<h3 class="tit">알림</h3>
+						<button type="button" class="btnPopClose" title="레이어팝업 닫기"><i class="fa fa-times"></i>닫기</button>
+					</div>
+				</div>
+
+				<div class="pct">
+					<div class="poptents">
+						<p class="pop__info">
+							<i class="pop__info--success"></i>
+							정보가 저장되었습니다.
+						</p>
+					</div>
+				</div>
+
+				<div class="pbt">
+					<div class="btn__set">
+						<button type="button" class="btn primary btnPopClose">확인</button>
+					</div>
+				</div>
+
+			</div>
+		</article>
+		<!-- //Alert Layer Popup : 정보 저장  -->
+		
+		<!-- Alert Layer Popup : 업로드 불가  -->
+		<article class="popLayer" id="popUpload">
+			<div class="pbd pop-sm">
+
+				<div class="phd">
+					<div class="in">
+						<h3 class="tit">알림</h3>
+						<button type="button" class="btnPopClose" title="레이어팝업 닫기"><i class="fa fa-times"></i>닫기</button>
+					</div>
+				</div>
+
+				<div class="pct">
+					<div class="poptents">
+						<p class="pop__info">
+							<i class="pop__info--fail"></i>
+							파일명이 동일한 경우 업로드 불가합니다.
+						</p>
+					</div>
+				</div>
+
+				<div class="pbt">
+					<div class="btn__set">
+						<button type="button" class="btn primary btnPopClose">확인</button>
+					</div>
+				</div>
+
+			</div>
+		</article>
+		<!-- //Alert Layer Popup : 업로드 불가  -->
+		
+		<!-- Alert Layer Popup : 변경요청 완료  -->
+		<article class="popLayer" id="popSuccess">
+			<div class="pbd pop-sm">
+
+				<div class="phd">
+					<div class="in">
+						<h3 class="tit">알림</h3>
+						<button type="button" class="btnPopClose" title="레이어팝업 닫기"><i class="fa fa-times"></i>닫기</button>
+					</div>
+				</div>
+
+				<div class="pct">
+					<div class="poptents">
+						<p class="pop__info">
+							<i class="pop__info--success"></i>
+							변경요청이 완료되었으며,<br>관리자 승인 후 반영됩니다.
+						</p>
+					</div>
+				</div>
+
+				<div class="pbt">
+					<div class="btn__set">
+						<button type="button" class="btn primary btnPopClose">확인</button>
+					</div>
+				</div>
+
+			</div>
+		</article>
+		<!-- //Alert Layer Popup : 변경요청 완료  -->
+	</div>
+	<!-- // 팝업 레이어 -->
+<!-- ============= [e]페이지 컨텐츠 ============= -->
+
+
+
+
+
+<!-- ============= [s]푸터 공통 ============= -->
+	<footer>
+		<ul>
+			<li><a href="../../help/policy/개인정보처리방침.html" target="_blank">개인정보처리방침</a></li>
+		</ul>
+		COPYRIGHT © 2024 BY SK E&amp;S. ALL RIGHTS RESERVED.
+	</footer>
+
+	<!-- 전체 공통 스크립트 -->
+	<script>
+		$(window).on('load',function(){
+			// html 로드 순서 때문에 window.load 에 넣었는데. 개발시에는 document.ready에 넣어주시면 되겠습니다.
+			ui.init();
+		});
+
+		$(document).ready(function() {
+
+		});
+
+	</script>
+	<!-- //전체 공통 스크립트 -->
+</body>
+</html>
+<!-- ============= [e]푸터 공통 ============= -->

@@ -1,0 +1,768 @@
+<!-- ============= [s]메타 공통 ============= -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="description" content="SK E&S REC SERVICE" />
+	<meta name="keywords" content="SK E&S REC SERVICE" />
+	<meta name="classification" content="SK E&S REC SERVICE" />
+	<meta name="author" content="SK E&S REC SERVICE" />
+	<meta name="title" content="SK E&S REC SERVICE">
+	<meta name="apple-mobile-web-app-title" content="SK E&S REC SERVICE">
+	<meta name="subject" content="SK E&S REC SERVICE" />
+	<meta name="robots" content="index,follow" />
+	<title>SK E&amp;S RE100 사업자 서비스</title>
+	<!-- favicon -->
+	<link rel="shortcut icon" href="../../../static/assets/images/favi/favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="../../../static/assets/images/favi/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../../../static/assets/images/favi/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../../../static/assets/images/favi/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../../../static/assets/images/favi/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../../../static/assets/images/favi/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../../../static/assets/images/favi/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../../../static/assets/images/favi/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../../../static/assets/images/favi/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../../../static/assets/images/favi/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="../../../static/assets/images/favi/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../static/assets/images/favi/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../../../static/assets/images/favi/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../static/assets/images/favi/favicon-16x16.png">
+	<!-- <link rel="manifest" href="../../assets/images/favi/manifest.json"> -->
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="../../../static/assets/images/favi/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="canonical" href="이곳에 최종 도메인 주소입력">
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="../../../static/assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../../../static/assets/css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="../../../static/assets/css/theme_green.css" />
+	<!-- js -->
+	<script type="text/javascript" src="../../../static/assets/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../../../static/assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../static/assets/js/swiper.min.js"></script>
+	<script type="text/javascript" src="../../../static/assets/js/ui.js"></script>
+</head>
+
+<body>
+<!-- ============= [e]메타 공통 ============= -->
+
+
+
+
+
+<!-- ============= [s]헤더 공통 ============= -->
+	<!--
+		[header]
+		- 1.로그인 페이지 : 헤더공통을 인클루드하지 않는다.
+		- 2.회원가입 페이지 : 헤더공통을 인클루드 하지만 <header class="header header__member"> 클래스가 추가된다.
+		- 3.나머지 페이지 : <header class="header">
+	-->
+	<dl id="skipNav">
+		<dt>바로가기 메뉴</dt>
+		<dd><a href="#main">본문 바로가기</a></dd>
+		<dd><a href="#gnb">주메뉴 바로가기</a></dd>
+	</dl>
+	<header class="header">
+		<div class="header__inner">
+			<!--
+				- 히스토리백 버튼은 뒤로 이동할 히스토리가 있을 경우에만 보이도록 한다.
+				show : <div class="history__back on">
+				hide : <div class="history__back">
+			-->
+			<div class="history__back on"><button type="button"></button></div>
+			<h1 class="logo">
+				<a href="../../main/main/메인.html" title="SK E&amp;S RE100 거래서비스"></a>
+			</h1>
+			<div class="util">
+				<span class="select">
+					<select>
+						<option>SK E&amp;S</option>
+					</select>
+				</span>
+				<span><em>홍길동</em>님</span>
+				<button type="button" onclick="location.href='../../member/login/로그인.html'" class="btn btn logout">로그아웃</button>
+			</div>
+			<button type="button" class="nav__hamburger" aria-owns="navMobile" aria-expanded="false" aria-label="모바일 메뉴">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+
+		<!--
+			[pc메뉴 활성화]
+			- 활성화 클래스는 a태그에 붙는다.
+
+
+			[1뎁스]
+			- 활성화 대상  : .nav__link
+			- 활성화 클래스 : .nav__link--active
+			- 활성화 아이탬 attr : aria-current="page"
+			- 1뎁스 활성화는 클래스외에 aria도 같이 붙는다.
+
+			비활성 : <a class="nav__link" href="#">
+			활성 :   <a class="nav__link nav__link--active" href="#" aria-current="page">
+
+
+			[2뎁스]
+			- 활성화 대상  : .nav-sub__link
+			- 활성화 클래스 : .nav-sub__link--active
+
+			비활성 : <a class="nav-sub__link" href="#">
+			활성 :   <a class="nav-sub__link nav-sub__link--active" href="#">
+		-->
+		<nav id="gnb" class="nav full-nav">
+			<ul class="nav__list">
+				<li class="nav__item">
+					<a class="nav__link" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">계약</a>
+					<ul class="nav-sub__list">
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../contract/ppa/직접PPA_공급개별계약_목록.html">직접PPA <span>$공급$</span> 개별 계약</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../contract/ppa_group/직접PPA_공급그룹계약_목록.html">직접PPA <span>$공급$</span> 그룹 계약</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../contract/ppa_final/직접PPA_최종계약_목록.html">직접PPA 최종 계약</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../contract/vppa/VPPA_공급계약_목록.html">V.PPA 계약</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../contract/supply/보장공급량관리_목록.html">보장공급량 관리</a></li>
+					</ul>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">대금정산</a>
+					<ul class="nav-sub__list">
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../calculation/ppa/직접PPA대금_공급_목록.html">직접PPA 대금</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../calculation/ppa_rec/직접PPA초과발전REC대금_공급_목록.html">직접PPA 초과발전REC 대금</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../calculation/vppa/VPPA대금_공급_목록.html">V.PPA 대금</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../calculation/deposit/입금확인요청_목록.html">입금 확인 요청</a></li>
+					</ul>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">계좌</a>
+					<ul class="nav-sub__list">
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../account/deposit/입금계좌관리_목록.html">입금계좌 관리</a></li>
+					</ul>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">마이페이지</a>
+					<ul class="nav-sub__list">
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../mypage/schedule/대금정산일정.html">대금정산 일정</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../mypage/info/사업자정보관리_목록.html">사업자정보 관리</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../mypage/account/통합계정관리_목록.html">통합계정 관리</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../mypage/password/비밀번호재설정_step1.html">비밀번호 재설정</a></li>
+					</ul>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">설정</a>
+					<ul class="nav-sub__list">
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../setting/notice/공지사항_목록.html">공지사항</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../setting/qna/1:1문의_목록.html">1:1 문의</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<!--
+			[모바일 메뉴 활성화]
+			- 활성화 클래스는 a태그에 붙는다.
+
+
+			[1뎁스]
+			- 활성화 대상  : .navMb__link
+			- 활성화 클래스 : .nav__link--active
+			- 활성화 아이탬 attr : aria-current="page"
+			- 1뎁스는 활성화는 클래스외에 aria도 같이 붙는다.
+
+			비활성 : <a class="navMb__link" href="#">
+			활성 :   <a class="navMb__link nav__link--active" href="#" aria-current="page">
+
+
+			[2뎁스]
+			- 활성화 대상  : .navMb-twodepth__link
+			- 활성화 클래스 : .nav-sub__link--active
+
+			비활성 : <a class="nav-sub__link" href="#">
+			활성 :   <a class="nav-sub__link nav-sub__link--active" href="#">
+		-->
+		<div id="navMobile" class="nav-mobile" tabindex="-1">
+			<div class="navMb__container">
+				<div class="navMb__inner">
+					<div class="util">
+						<span class="select">
+							<select>
+								<option>SK E&amp;S</option>
+							</select>
+						</span>
+						<button type="button"><em>로그아웃</em></button>
+					</div>
+					<ul class="navMb_list">
+						<li class="navMb__item">
+							<a href="javascript:void(0);" class="navMb__link" aria-haspopup="true" aria-expanded="false"><span>계약</span></a>
+							<ul class="navMb-twodepth__list">
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../contract/ppa/직접PPA_공급개별계약_목록.html">직접PPA <span>$공급$</span> 개별 계약</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../contract/ppa_group/직접PPA_공급그룹계약_목록.html">직접PPA <span>$공급$</span> 그룹 계약</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../contract/ppa_final/직접PPA_최종계약_목록.html">직접PPA 최종 계약</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../contract/vppa/VPPA_공급계약_목록.html">V.PPA 계약</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../contract/supply/보장공급량관리_목록.html">보장공급량 관리</a></li>
+							</ul>
+						</li>
+						<li class="navMb__item">
+							<a href="javascript:void(0);" class="navMb__link" aria-haspopup="true" aria-expanded="false"><span>대금정산</span></a>
+							<ul class="navMb-twodepth__list">
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../calculation/ppa/직접PPA대금_공급_목록.html">직접PPA 대금</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../calculation/ppa_rec/직접PPA초과발전REC대금_공급_목록.html">직접PPA 초과발전REC 대금</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../calculation/vppa/VPPA대금_공급_목록.html">V.PPA 대금</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../calculation/deposit/입금확인요청_목록.html">입금 확인 요청</a></li>
+							</ul>
+						</li>
+						<li class="navMb__item">
+							<a href="javascript:void(0);" class="navMb__link" aria-haspopup="true" aria-expanded="false"><span>계좌</span></a>
+							<ul class="navMb-twodepth__list">
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../account/deposit/입금계좌관리_목록.html">입금계좌 관리</a></li>
+							</ul>
+						</li>
+						<li class="navMb__item">
+							<a href="javascript:void(0);" class="navMb__link" aria-haspopup="true" aria-expanded="false"><span>마이페이지</span></a>
+							<ul class="navMb-twodepth__list">
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../mypage/schedule/대금정산일정.html">대금정산 일정</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../mypage/info/사업자정보관리_목록.html">사업자정보 관리</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../mypage/account/통합계정관리_목록.html">통합계정 관리</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../mypage/password/비밀번호재설정_step1.html">비밀번호 재설정</a></li>
+							</ul>
+						</li>
+						<li class="navMb__item">
+							<a href="javascript:void(0);" class="navMb__link" aria-haspopup="true" aria-expanded="false"><span>설정</span></a>
+							<ul class="navMb-twodepth__list">
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../setting/notice/공지사항_목록.html">공지사항</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../setting/qna/1:1문의_목록.html">1:1 문의</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+<!-- ============= [e]헤더 공통 ============= -->
+
+
+
+
+<!-- ============= [s]페이지 컨텐츠 ============= -->
+	<main id="main">
+
+		<div class="sub">
+			<div class="container">
+
+				<div class="main">
+					<!-- 매뉴얼 -->
+					<div class="main__quick top_button">
+						<div class="slide__wrap">
+							<div class="topquick__swiper swiper-container swiper-container-initialized swiper-container-horizontal">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide swiper-slide-active" style="width: 171.4px; margin-right: 30px;"><a href="" class="btn sm" target="_blank"><span>매뉴얼1</span></a></li>
+									<li class="swiper-slide swiper-slide-next" style="width: 171.4px; margin-right: 30px;"><a href="" class="btn sm" target="_blank"><span>매뉴얼2</span></a></li>
+									<li class="swiper-slide" style="width: 171.4px; margin-right: 30px;"><a href="" class="btn sm" target="_blank"><span>매뉴얼3</span></a></li>
+									<li class="swiper-slide" style="width: 171.4px; margin-right: 30px;"><a href="" class="btn sm" target="_blank"><span>매뉴얼4</span></a></li>
+									<li class="swiper-slide" style="width: 171.4px; margin-right: 30px;"><a href="" class="btn sm" target="_blank"><span>매뉴얼5</span></a></li>
+								</ul>
+							<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+						</div>
+					</div>
+					<!-- //매뉴얼 -->
+					<!-- 계정 -->
+					<div class="main__welcome">
+	                  <!--
+	                  	 .user__biz__name : 회사
+	                     .user__info__name : 사용자이름
+	                     .user__cotel : 전화번호
+	                  -->
+	                  <div class="user__info">
+						<div>
+							<span class="user__biz__name">해피 태양광 발전 주식회사</span>
+						</div>
+						대표자 <strong><span class="user__info__name">박서보</span>, <span class="user__info__name">김환기</span></strong> 님
+					  </div>
+	                  <div class="user__biz">
+	                     <div>
+	                        <span class="mb">SK E&amp;S RE100 문의전화<br>(&nbsp;<span class="user__cotel">00-0000-0000</span>&nbsp;)</span>
+	                     </div>
+					  </div>
+	               </div>
+	               <!-- //계정 -->
+	               
+	               <!-- 입금지연 총액 -->
+	               <div class="main__delay">
+	               	<!--
+	               		.delay__total : 입금지연 총액
+	               	-->
+		           	<p>입금 지연 총액</p>
+		            <p>
+		            	<span class="delay__total">1,111,000</span>
+		                <span>원</span>
+		                <a href="" class="btn ico detail" title="자세히 보기">자세히 보기</a>
+		            </p>
+	               </div>
+	               <!-- //입금지연 총액 -->
+
+					<!-- PPA, V.PPA 대금 -->
+					<div class="main__account">
+						<!--
+							.pay__year : 지급년도
+							.pay__month : 지급월
+							.accout__item__tit : 타이틀
+							.accout__item__subTit : 서브 타이틀
+							.account__item__num : 지급금액
+							.pay__standby__account :입금확인 미처리 건수
+						-->
+						
+						<!--
+							입금 상태값
+							<span class="account__status__require">입금 필요</span>
+							<span class="account__status__success">정산 완료 or 지급 완료</span>
+							<span class="account__status__delay">입금 지연</span>
+						 -->
+						<div class="swiper__paging__count">
+							<div class="next"></div>
+							<div class="prev"></div>
+							<p class="swiper-pagination"></p>
+						</div>
+						<div class="slide__wrap">
+							<div class="main__swiper2 swiper-container">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide">
+										<div class="main__title">
+											<h2><span class="pay__year">2024</span>년 <span class="pay__month">02</span>월 PPA 거래대금</h2>
+										</div>
+										<div class="account__list">
+											<div class="account__item">
+												<p class="accout__item__tit">PPA대금(공급)지급액</p>
+												<p class="text-right">
+													<span class="account__status__success">지급 완료</span>
+													<span class="account__item__num">2,325,000</span>
+													원
+												</p>
+												
+											</div>
+											<div class="account__detail">
+												<ul>
+													<li class="accout__item__tit">PPA 부가비용 청구액</li>
+													<li class="accout__item__subTit">전력거래소(KPX)납부</li>
+													<li>
+														<p>전력거래수수료</p>
+														<p>
+															<span class="account__status__delay">입금 지연</span>
+															<span class="account__item__num">1,232,350,000</span>
+															원
+														</p>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li class="swiper-slide">
+										<div class="main__title">
+											<h2><span class="pay__year">2024</span>년 <span class="pay__month">02</span>월 V.PPA 거래대금</h2>
+										</div>
+										<div class="account__list">
+											<div class="account__item">
+												<p class="accout__item__tit">V.PPA REC거래대금</p>
+												<p class="text-right">
+													<span class="account__item__num">2,325,000</span>
+													원
+												</p>
+												<p class="accout__item__tit">V.PPA REC거래수수료 청구액</p>
+												<p class="text-right">
+													<span class="account__status__require">입금 필요</span>
+													<span class="account__item__num">2,325,000</span>
+													원
+												</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<a href="#">
+							<p>입금확인 미처리 건</p>
+							<p><strong class="pay__standby__account">84</strong>건</p>
+						</a>
+					</div>
+					<!-- PPA, V.PPA 대금 -->
+
+					<!-- 계약 현황 -->
+					<div class="main__contract">
+						<!--
+							.contract__item__num : 	계약번호
+							.contract__item__name : 상호명
+							.contract__item__gen : 발전기명
+							.contract__item__vol : 설비용량
+							.contract__item__cost : 공급단가
+							.contract__item_trans : 송·배전망
+							.contract__item__insure : 연간 보장공급량
+						-->
+						<div class="main__title"><h2>계약현황</h2></div>
+						<div class="swiper__paging__count contract">
+							<div>
+								<div class="swiper-button-next custom"></div>
+								<p><span class="cuN"></span> / <span class="toN"></span></p>
+								<div class="swiper-button-prev custom"></div>
+							</div>
+						</div>
+						<div class="slide__wrap">
+							<div class="main__swiper swiper-container">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide">
+										<div class="contract__list">
+											<div class="contract__item">
+												계약번호 <span class="contract__item__num">직접 PPA 24-U0000102</span>
+											</div>
+											<div class="contract__detail">
+												<ul>
+													<li>상호명 : <span class="contract__item__name">주식회사 케이티엔지 천안공장</span></li>
+													<li>발전기명 : <span class="contract__item__gen">모햇태양광발전소 167호</span></li>
+													<li>설비용량 : <span class="contract__item__vol">3,330</span> kW</li>
+													<li>공급단가 : <span class="contract__item__cost">170</span> 원/kWh</li>
+													<li>송·배전망 : <span class="contract__item_trans">배전고압망</span></li>
+													<li>연간 보장공급량 : <span class="contract__item__insure">177</span> MWh</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li class="swiper-slide">
+										<div class="contract__list">
+											<div class="contract__item">
+												계약번호 <span class="contract__item__num">직접 PPA 24-U0000102</span>
+											</div>
+											<div class="contract__detail">
+												<ul>
+													<li>상호명 : <span class="contract__item__name">주식회사 케이티엔지 인천공장</span></li>
+													<li>발전기명 : <span class="contract__item__gen">모햇태양광발전소 167호</span></li>
+													<li>설비용량 : <span class="contract__item__vol">3,330</span> kW</li>
+													<li>공급단가 : <span class="contract__item__cost">170</span> 원/kWh</li>
+													<li>송·배전망 : <span class="contract__item_trans">배전고압망</span></li>
+													<li>연간 보장공급량 : <span class="contract__item__insure">177</span> MWh</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- //계약 현황 -->
+					<!-- 공지사항 -->
+					<div class="main__notice">
+						<!--
+							.notice__title : 공지사항 제목
+							.noticec__date : 공지사항 날짜
+						-->
+						<div class="main__title"><h2>공지사항</h2><a href="#" class="more"></a></div>
+						<ul class="notice__list">
+							<li><a href="#" class="notice__title">2022년 상반기 한국형 FIT 고정가격계약 계좌 등록 및 대금지급 관련 안내</a><span class="noticec__date">2024-12-22</span></li>
+							<li><a href="#" class="notice__title">REC시스템 모바일 앱 관련 아이폰 사용자 오류 해결 완료 알림</a><span class="noticec__date">2024-12-22</span></li>
+							<li><a href="#" class="notice__title">2022년 상반기 한국형 FIT 고정 가격 계약 체결 안내</a><span class="noticec__date">2024-12-22</span></li>
+							<li><a href="#" class="notice__title">2022년 상반기 한국형 FIT 고정가격계약 계좌 등록 및 대금지급 관련 안내</a><span class="noticec__date">2024-12-22</span></li>
+							<li><a href="#" class="notice__title">REC시스템 모바일 앱 관련 아이폰 사용자 오류 해결 완료 알림</a><span class="noticec__date">2024-12-22</span></li>
+						</ul>
+					</div>
+					<!-- //공지사항 -->
+					<!-- 퀵 메뉴 -->
+					<div class="main__quick">
+						<div class="slide__wrap">
+							<div class="quick__swiper swiper-container">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide"><a href="#" target="_blank"><i class="quick"></i>공지사항</a></li>
+									<li class="swiper-slide"><a href="#" target="_blank"><i class="quick"></i>직접PPA<br /> 공급개별계약</a></li>
+									<li class="swiper-slide"><a href="#" target="_blank"><i class="quick"></i>직접PPA<br /> 발전대금</a></li>
+									<li class="swiper-slide"><a href="#" target="_blank"><i class="quick"></i>입금계좌<br /> 관리</a></li>
+									<li class="swiper-slide"><a href="#" target="_blank"><i class="quick"></i>1:1 문의</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- //퀵 메뉴 -->
+				</div>
+
+			</div>
+		</div>
+		
+		<!-- 페이지 개별 스크립트 -->
+		<script>
+			$(document).ready(function() {
+				
+				//계약현황 페이징
+				var ww = window.innerWidth;
+				var pageTotal = $('.main__swiper .swiper-slide').length;
+				var num1 = $('.main__swiper .swiper-slide').length;
+	
+				if (pageTotal < 10) {
+					num1 = pageTotal
+				} else {
+					num1 = pageTotal
+				}
+	
+				$('.swiper__paging__count.contract .toN').text(num1);
+				if(pageTotal == 0) {
+					$('.swiper__paging__count.contract .cuN').text('0');
+				} else {
+					$('.swiper__paging__count.contract .cuN').text('1');
+				}
+				
+				//계약현황 swiper
+				var mainSwiper = new Swiper(".main__swiper", {
+					effect : 'cards',
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+					allowTouchMove: false,
+					on: {
+						slideChange: function () {
+							var currentVirtual = mainSwiper.realIndex;
+							var currentReal = currentVirtual + 1;
+							var current = 0;
+	
+							if (currentReal < 10) {
+								current = currentReal
+							} else {
+								current = currentReal
+							}
+	
+							$('.swiper__paging__count.contract .cuN').html(current);
+						}
+					}
+				});
+				
+				
+				//PPA 거래대금 swiper
+				var mainSwiper2 = new Swiper(".main__swiper2", {
+					effect : 'cards',
+					allowTouchMove: false,
+					pagination: {
+				        el: ".swiper-pagination",
+				        type: "fraction",
+				      },
+				      navigation: {
+				        nextEl: ".next",
+				        prevEl: ".prev",
+				     },
+				});
+				
+				//퀵 메뉴 swiper
+				var quickSwiper = new Swiper('.quick__swiper', {
+					spaceBetween: 30,
+					slidesPerView: 5,
+					allowTouchMove: false,
+				});
+				
+				//매뉴얼 swiper
+				var tquickSwiper = new Swiper('.topquick__swiper', {
+					spaceBetween: 30,
+					slidesPerView: 5,
+					allowTouchMove: false,
+				});
+				
+				//swiper 반응형
+				responsiveSwiper();
+	
+				function responsiveSwiper() {
+					if (ww >= 1025) {
+						mainSwiper.destroy();
+						mainSwiper = new Swiper(".main__swiper", {
+							effect : 'cards',
+							navigation: {
+								nextEl: '.swiper-button-next',
+								prevEl: '.swiper-button-prev',
+							},
+							allowTouchMove: false,
+							on: {
+								slideChange: function () {
+									var currentVirtual = mainSwiper.realIndex;
+									var currentReal = currentVirtual + 1;
+									var current = 0;
+	
+									if (currentReal < 10) {
+										current = currentReal
+									} else {
+										current = currentReal
+									}
+	
+									$('.swiper__paging__count.contract .cuN').html(current);
+								}
+							}
+						});
+						
+						mainSwiper2.destroy();
+						mainSwiper2 = new Swiper('.main__swiper2', {
+							effect : 'cards',
+							allowTouchMove: false,
+							pagination: {
+						        el: ".swiper-pagination",
+						        type: "fraction",
+						      },
+						      navigation: {
+						        nextEl: ".next",
+						        prevEl: ".prev",
+						     },								
+						});
+	
+						quickSwiper.destroy();
+						quickSwiper = new Swiper('.quick__swiper', {
+							spaceBetween: 30,
+							slidesPerView: 5,
+							allowTouchMove: false,
+						});
+	
+						tquickSwiper.destroy();
+						tquickSwiper = new Swiper('.topquick__swiper', {
+							spaceBetween: 30,
+							slidesPerView: 5,
+							allowTouchMove: false,
+						});
+					} else if (ww < 1025) {
+						mainSwiper.destroy();
+						mainSwiper = new Swiper(".main__swiper", {
+							effect : 'cards',
+							navigation: {
+								nextEl: '.swiper-button-next',
+								prevEl: '.swiper-button-prev',
+							},
+							allowTouchMove: true,
+							on: {
+								slideChange: function () {
+									var currentVirtual = mainSwiper.realIndex;
+									var currentReal = currentVirtual + 1;
+									var current = 0;
+	
+									if (currentReal < 10) {
+										current = currentReal
+									} else {
+										current = currentReal
+									}
+	
+									$('.swiper__paging__count.contract .cuN').html(current);
+								}
+							}
+						});
+						
+						mainSwiper2.destroy();
+						mainSwiper2 = new Swiper('.main__swiper2', {
+							effect : 'cards',
+							allowTouchMove: false,
+							pagination: {
+						        el: ".swiper-pagination",
+						        type: "fraction",
+						      },
+						      navigation: {
+						        nextEl: ".next",
+						        prevEl: ".prev",
+						     },								
+						});
+	
+						quickSwiper.destroy();
+						quickSwiper = new Swiper('.quick__swiper', {
+							slidesPerView: "auto",
+							spaceBetween: 16,
+							allowTouchMove: true,
+						});
+	
+						tquickSwiper.destroy();
+						tquickSwiper = new Swiper('.topquick__swiper', {
+							slidesPerView: "auto",
+							spaceBetween: 16,
+							allowTouchMove: true,
+						});
+					}
+				}
+	
+				$(window).on('load resize', function () {
+					ww = window.innerWidth;
+					responsiveSwiper();
+				});
+	
+				// 안내팝업 열기
+				ui.popLayer.open('popPw');
+			});
+	
+		</script>
+		<!-- // 페이지 개별 스크립트 -->
+
+	</main>
+
+	<!-- 팝업 레이어 -->
+	<div id="layers" class="layers" >
+		<!--
+			- 레이어는 이안에 위치. 인클루드 위치도 이 곳.
+			- 페이지내에 레이어가 많아서 별도의 파일로 인클루드해서 사용할 시,  article영역만 외부로 빼서 파일로 만들고 인클루드.
+		-->
+
+		<!-- Alert Layer popup : 비밀번호 변경 -->
+		<article class="popLayer" id="popPw">
+			<div class="pbd pop-md">
+				<!-- popup header -->
+				<div class="phd">
+					<div class="in">
+						<h3 class="tit">알림</h3>
+						<button type="button" class="btnPopClose" title="레이어팝업 닫기"><i class="fa fa-times"></i>닫기</button>
+					</div>
+				</div>
+				<!-- //popup header -->
+				<!-- popup content -->
+				<div class="pct">
+					<div class="poptents">
+						<div>
+							<p class="pop__info">
+								<i class="pop__info--confirm"></i>
+								비밀번호를 변경하신지 90일이 경과하였습니다.<br>
+								새로운 비밀번호로 변경해주세요.
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- //popup content -->
+				<!-- popup footer -->
+				<div class="pbt">
+					<div class="btn__set">
+						<button type="button" class="btn secondary btnPopClose">다음에 변경</button>
+						<button type="button" class="btn primary btnPopClose">비밀번호 변경</button>
+					</div>
+				</div>
+				<!-- popup footer -->
+			</div>
+		</article>
+		<!-- //Alert Layer popup : 비밀번호 변경 -->
+
+	</div>
+	<!-- // 팝업 레이어 -->
+<!-- ============= [e]페이지 컨텐츠 ============= -->
+
+
+
+
+
+<!-- ============= [s]푸터 공통 ============= -->
+	<footer>
+		<ul>
+			<li><a href="../../help/policy/개인정보처리방침.html" target="_blank">개인정보처리방침</a></li>
+		</ul>
+		COPYRIGHT © 2024 BY SK E&amp;S. ALL RIGHTS RESERVED.
+	</footer>
+
+	<!-- 전체 공통 스크립트 -->
+	<script>
+		$(window).on('load',function(){
+			// html 로드 순서 때문에 window.load 에 넣었는데. 개발시에는 document.ready에 넣어주시면 되겠습니다.
+			ui.init();
+		});
+
+		$(document).ready(function() {
+
+		});
+
+	</script>
+	<!-- //전체 공통 스크립트 -->
+</body>
+</html>
+<!-- ============= [e]푸터 공통 ============= -->

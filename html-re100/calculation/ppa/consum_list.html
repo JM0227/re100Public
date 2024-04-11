@@ -1,0 +1,1902 @@
+<!-- ============= [s]메타 공통 ============= -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="description" content="SK E&S REC SERVICE" />
+	<meta name="keywords" content="SK E&S REC SERVICE" />
+	<meta name="classification" content="SK E&S REC SERVICE" />
+	<meta name="author" content="SK E&S REC SERVICE" />
+	<meta name="title" content="SK E&S REC SERVICE">
+	<meta name="apple-mobile-web-app-title" content="SK E&S REC SERVICE">
+	<meta name="subject" content="SK E&S REC SERVICE" />
+	<meta name="robots" content="index,follow" />
+	<title>SK E&amp;S RE100 사업자 서비스</title>
+	<!-- favicon -->
+	<link rel="shortcut icon" href="../../../static/assets/images/favi/favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="../../../static/assets/images/favi/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../../../static/assets/images/favi/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../../../static/assets/images/favi/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../../../static/assets/images/favi/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../../../static/assets/images/favi/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../../../static/assets/images/favi/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../../../static/assets/images/favi/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../../../static/assets/images/favi/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../../../static/assets/images/favi/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="../../../static/assets/images/favi/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../static/assets/images/favi/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../../../static/assets/images/favi/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../static/assets/images/favi/favicon-16x16.png">
+	<!-- <link rel="manifest" href="../../assets/images/favi/manifest.json"> -->
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="../../../static/assets/images/favi/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="canonical" href="이곳에 최종 도메인 주소입력">
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="../../../static/assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../../../static/assets/css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="../../../static/assets/css/theme_green.css" />
+	<!-- js -->
+	<script type="text/javascript" src="../../../static/assets/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../../../static/assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../static/assets/js/swiper.min.js"></script>
+	<script type="text/javascript" src="../../../static/assets/js/ui.js"></script>
+</head>
+
+<body>
+<!-- ============= [e]메타 공통 ============= -->
+
+
+
+
+
+<!-- ============= [s]헤더 공통 ============= -->
+	<!--
+		[header]
+		- 1.로그인 페이지 : 헤더공통을 인클루드하지 않는다.
+		- 2.회원가입 페이지 : 헤더공통을 인클루드 하지만 <header class="header header__member"> 클래스가 추가된다.
+		- 3.나머지 페이지 : <header class="header">
+	-->
+	<dl id="skipNav">
+		<dt>바로가기 메뉴</dt>
+		<dd><a href="#main">본문 바로가기</a></dd>
+		<dd><a href="#gnb">주메뉴 바로가기</a></dd>
+	</dl>
+	<header class="header">
+		<div class="header__inner">
+			<!--
+				- 히스토리백 버튼은 뒤로 이동할 히스토리가 있을 경우에만 보이도록 한다.
+				show : <div class="history__back on">
+				hide : <div class="history__back">
+			-->
+			<div class="history__back on"><button type="button"></button></div>
+			<h1 class="logo">
+				<a href="../../main/main/메인.html" title="SK E&amp;S RE100 거래서비스"></a>
+			</h1>
+			<div class="util">
+				<span class="select">
+					<select>
+						<option>SK E&amp;S</option>
+					</select>
+				</span>
+				<span><em>홍길동</em>님</span>
+				<button type="button" onclick="location.href='../../member/login/로그인.html'" class="btn btn logout">로그아웃</button>
+			</div>
+			<button type="button" class="nav__hamburger" aria-owns="navMobile" aria-expanded="false" aria-label="모바일 메뉴">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+
+		<!--
+			[pc메뉴 활성화]
+			- 활성화 클래스는 a태그에 붙는다.
+
+
+			[1뎁스]
+			- 활성화 대상  : .nav__link
+			- 활성화 클래스 : .nav__link--active
+			- 활성화 아이탬 attr : aria-current="page"
+			- 1뎁스 활성화는 클래스외에 aria도 같이 붙는다.
+
+			비활성 : <a class="nav__link" href="#">
+			활성 :   <a class="nav__link nav__link--active" href="#" aria-current="page">
+
+
+			[2뎁스]
+			- 활성화 대상  : .nav-sub__link
+			- 활성화 클래스 : .nav-sub__link--active
+
+			비활성 : <a class="nav-sub__link" href="#">
+			활성 :   <a class="nav-sub__link nav-sub__link--active" href="#">
+		-->
+		<nav id="gnb" class="nav full-nav">
+			<ul class="nav__list">
+				<li class="nav__item">
+					<a class="nav__link" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">계약</a>
+					<ul class="nav-sub__list">
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../contract/ppa/직접PPA_공급개별계약_목록.html">직접PPA <span>$공급$</span> 개별 계약</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../contract/ppa_group/직접PPA_공급그룹계약_목록.html">직접PPA <span>$공급$</span> 그룹 계약</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../contract/ppa_final/직접PPA_최종계약_목록.html">직접PPA 최종 계약</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../contract/vppa/VPPA_공급계약_목록.html">V.PPA 계약</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../contract/supply/보장공급량관리_목록.html">보장공급량 관리</a></li>
+					</ul>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">대금정산</a>
+					<ul class="nav-sub__list">
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../calculation/ppa/직접PPA대금_공급_목록.html">직접PPA 대금</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../calculation/ppa_rec/직접PPA초과발전REC대금_공급_목록.html">직접PPA 초과발전REC 대금</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../calculation/vppa/VPPA대금_공급_목록.html">V.PPA 대금</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../calculation/deposit/입금확인요청_목록.html">입금 확인 요청</a></li>
+					</ul>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">계좌</a>
+					<ul class="nav-sub__list">
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../account/deposit/입금계좌관리_목록.html">입금계좌 관리</a></li>
+					</ul>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">마이페이지</a>
+					<ul class="nav-sub__list">
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../mypage/schedule/대금정산일정.html">대금정산 일정</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../mypage/info/사업자정보관리_목록.html">사업자정보 관리</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../mypage/account/통합계정관리_목록.html">통합계정 관리</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../mypage/password/비밀번호재설정_step1.html">비밀번호 재설정</a></li>
+					</ul>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">설정</a>
+					<ul class="nav-sub__list">
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../setting/notice/공지사항_목록.html">공지사항</a></li>
+						<li class="nav-sub__item"><a class="nav-sub__link" href="../../setting/qna/1:1문의_목록.html">1:1 문의</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<!--
+			[모바일 메뉴 활성화]
+			- 활성화 클래스는 a태그에 붙는다.
+
+
+			[1뎁스]
+			- 활성화 대상  : .navMb__link
+			- 활성화 클래스 : .nav__link--active
+			- 활성화 아이탬 attr : aria-current="page"
+			- 1뎁스는 활성화는 클래스외에 aria도 같이 붙는다.
+
+			비활성 : <a class="navMb__link" href="#">
+			활성 :   <a class="navMb__link nav__link--active" href="#" aria-current="page">
+
+
+			[2뎁스]
+			- 활성화 대상  : .navMb-twodepth__link
+			- 활성화 클래스 : .nav-sub__link--active
+
+			비활성 : <a class="nav-sub__link" href="#">
+			활성 :   <a class="nav-sub__link nav-sub__link--active" href="#">
+		-->
+		<div id="navMobile" class="nav-mobile" tabindex="-1">
+			<div class="navMb__container">
+				<div class="navMb__inner">
+					<div class="util">
+						<span class="select">
+							<select>
+								<option>SK E&amp;S</option>
+							</select>
+						</span>
+						<button type="button"><em>로그아웃</em></button>
+					</div>
+					<ul class="navMb_list">
+						<li class="navMb__item">
+							<a href="javascript:void(0);" class="navMb__link" aria-haspopup="true" aria-expanded="false"><span>계약</span></a>
+							<ul class="navMb-twodepth__list">
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../contract/ppa/직접PPA_공급개별계약_목록.html">직접PPA <span>$공급$</span> 개별 계약</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../contract/ppa_group/직접PPA_공급그룹계약_목록.html">직접PPA <span>$공급$</span> 그룹 계약</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../contract/ppa_final/직접PPA_최종계약_목록.html">직접PPA 최종 계약</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../contract/vppa/VPPA_공급계약_목록.html">V.PPA 계약</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../contract/supply/보장공급량관리_목록.html">보장공급량 관리</a></li>
+							</ul>
+						</li>
+						<li class="navMb__item">
+							<a href="javascript:void(0);" class="navMb__link" aria-haspopup="true" aria-expanded="false"><span>대금정산</span></a>
+							<ul class="navMb-twodepth__list">
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../calculation/ppa/직접PPA대금_공급_목록.html">직접PPA 대금</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../calculation/ppa_rec/직접PPA초과발전REC대금_공급_목록.html">직접PPA 초과발전REC 대금</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../calculation/vppa/VPPA대금_공급_목록.html">V.PPA 대금</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../calculation/deposit/입금확인요청_목록.html">입금 확인 요청</a></li>
+							</ul>
+						</li>
+						<li class="navMb__item">
+							<a href="javascript:void(0);" class="navMb__link" aria-haspopup="true" aria-expanded="false"><span>계좌</span></a>
+							<ul class="navMb-twodepth__list">
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../account/deposit/입금계좌관리_목록.html">입금계좌 관리</a></li>
+							</ul>
+						</li>
+						<li class="navMb__item">
+							<a href="javascript:void(0);" class="navMb__link" aria-haspopup="true" aria-expanded="false"><span>마이페이지</span></a>
+							<ul class="navMb-twodepth__list">
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../mypage/schedule/대금정산일정.html">대금정산 일정</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../mypage/info/사업자정보관리_목록.html">사업자정보 관리</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../mypage/account/통합계정관리_목록.html">통합계정 관리</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../mypage/password/비밀번호재설정_step1.html">비밀번호 재설정</a></li>
+							</ul>
+						</li>
+						<li class="navMb__item">
+							<a href="javascript:void(0);" class="navMb__link" aria-haspopup="true" aria-expanded="false"><span>설정</span></a>
+							<ul class="navMb-twodepth__list">
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../setting/notice/공지사항_목록.html">공지사항</a></li>
+								<li class="navMb-twodepth__item"><a class="navMb-twodepth__link" href="../../setting/qna/1:1문의_목록.html">1:1 문의</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+<!-- ============= [e]헤더 공통 ============= -->
+
+
+
+
+
+<!-- ============= [s]페이지 컨텐츠 ============= -->
+	<main id="main">
+
+		<div class="sub">
+			<div class="container">
+				<h2 class="page__title"><span>직접 PPA 대금(소비)</span></h2>
+				<!-- tab box -->
+				<div class="tab__box">
+					<ul class="tab__list">
+						<li class="active"><a href="#">직접PPA대금 - 소비</a></li>
+						<li><a href="#">직접PPA부가비용 - 망이용요금</a></li>
+						<li><a href="#">직접PPA부가비용 - 부가정산금</a></li>
+						<li><a href="#">직접PPA부가비용 - 전력거래수수료</a></li>
+						<li><a href="#">직접PPA부가비용 - 전력산업기반기금</a></li>
+					</ul>
+					
+					<!-- TAB1 : 직접PPA 대금 - 소비 -->
+					<div class="tab__content active">
+						<!-- searchForm : 모바일에서 검색 조건 최대 2건 만 노출, 나머지는 상세 검색 -->
+						<div class="searchForm flex">
+							<div class="rowGroup">
+								<div class="row">
+									<dl class="expander__no col col__4 col__xxl__6 col__xl__6 col__lg__12">
+										<dt>전력거래 연월</dt>
+										<dd>
+											<span class="calPeriod">
+											    <span class="input ui-input-date">
+											        <input type="text" class="datepicker_month" placeholder="YYYY-MM" value="" readonly>
+											    </span>
+											    <span class="input ui-input-date">
+											        <input type="text" class="datepicker_month" placeholder="YYYY-MM" value="" readonly>
+											    </span>
+											</span>
+										</dd>
+									</dl>
+									<dl class="expander__no col col__2 col__xxl__4 col__xl__6 col__lg__12">
+										<dt>입금상태</dt>
+										<dd>
+											<span class="select">
+												<select>
+													<option value="">전체</option>
+													<option value="">입금대기</option>
+													<option value="">입금확인 필요</option>
+													<option value="">입금지연</option>
+													<option value="">반제전표 생성 요청</option>
+													<option value="">반제전표 생성 실패</option>
+													<option value="">반제전표 생성 완료</option>
+													<option value="">SAP전표 기안 실패</option>
+													<option value="">SAP전표 기안 반려</option>
+													<option value="">반제 완료</option>
+												</select>
+											</span>
+										</dd>
+									</dl>
+									<dl class="expander__item col col__6 col__xxl__10 col__xl__12 col__lg__12">
+										<dt>검색어</dt>
+										<dd>
+											<div class="search__box">
+												<span class="select">
+													<select>
+														<option value="">최종 계약번호</option>
+														<option value="">소비 개별 계약번호</option>
+														<option value="">전기사용자 명</option>
+													</select>
+												</span>
+												<span class="input keyword2">
+													<input type="text" placeholder="검색어를 입력해주세요.">
+												</span>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="expander__btn">
+								<button type="button" class="btn gray ico expander">상세검색</button>
+								<button type="button" class="btn  ico reset">초기화</button>
+								<button type="submit" class="btn search">검색</button>
+							</div>
+						</div>
+						<!-- //searchForm -->
+						<!-- 입금 필요 금액 -->
+						<div class="payment__box">
+							<p class="payment__tit">입금 필요 금액 - PPA대금(소비)</p>
+							<p>
+								<span>총액</span>
+								<span class="payment__cost">1,110,000</span>
+								<span>원</span>
+							</p>
+						</div>
+						<!-- //입금 필요 금액 -->
+						<!-- table top -->
+						<div class="bbs__header type3">
+							<div class="bbs__header__left">
+								<div class="total__num">
+									<span>총 건수 :</span>
+									<strong class="num">852,129</strong>
+									<span>건</span>
+								</div>
+							</div>
+							<div class="bbs__header__right">
+						        <p>&#8251; PPA 대금 : 부가세 포함</p>
+						    </div>
+						</div>
+						<!-- //table top -->
+						<!-- table
+							- 테이블 가로 스크롤
+							- 데이터 최대 10개 노출, 나머지는 페이징 처리
+						-->
+						<!-- 입금 상태값
+							입금대기 : <span class="statusText status--wait">입금대기</span>
+							입금확인 필요 : <span class="statusText status--need">입금확인 필요</span>
+							입금지연 : <span class="statusText status--delay">입금지연</span>
+							
+							반제전표 생성 요청 : <span class="statusText status--request">반제전표 생성 요청</span>
+							반제전표 생성 실패 : <span class="statusText status--fail">반제전표 생성 실패</span>
+							반제전표 생성 완료 : <span class="statusText status--success">반제전표 생성 완료</span>
+
+							SAP전표 기안 실패 : <span class="statusText status--fail">SAP전표 기안 실패</span>
+							SAP전표 기안 반려 : <span class="statusText status--reject">SAP전표 기안 반려</span>
+
+							반제 완료 : <span class="statusText status--success">반제 완료</span>
+						 -->
+						<div style="overflow-x:auto; width:100%; white-space:nowrap;">
+							<table class="tbl__type__a hover">
+								<caption>직접 PPA대금(소비) 목록</caption>
+								<thead>
+									<tr>
+										<th scope="col">No</th>
+										<th scope="col">전력거래 연월</th>
+										<th scope="col">최종 계약번호</th>
+										<th scope="col">소비 개별 계약번호</th>
+										<th scope="col">전기사용자명</th>
+										<th scope="col">계약전력(kW)</th>
+										<th scope="col">PPA 거래량(MWh)</th>
+										<th scope="col">적용 거래단가(원/kWh)</th>
+										<th scope="col">PPA대금(청구 금액)</th>
+										<th scope="col">입금 상태</th>
+										<th scope="col">SK E&amp;S 청구일자</th>
+										<th scope="col">입금기한 일자</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(PPA대금).html" class="link" title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--wait">입금대기</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(PPA대금).html" class="link" title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--need">입금확인 필요</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(PPA대금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td> <span class="statusText status--delay">입금지연</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(PPA대금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--request">반제전표 생성 요청</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(PPA대금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--fail">반제전표 생성 실패</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(PPA대금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td> <span class="statusText status--success">반제전표 생성 완료</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(PPA대금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--fail">SAP전표 기안 실패</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(PPA대금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--reject">SAP전표 기안 반려</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(PPA대금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--success">반제 완료</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(PPA대금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--success">반제 완료</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //table -->
+						<!--
+							- 페이지네이션 활성화
+							- .pagination__num에만 적용.(처음 이전 다음 마지막은 활성화 안시킴)
+							- 활성화 클래스 : .active
+						-->
+						<div role="navigation" class="pagination" aria-label="pagination">
+						    <div class="pagination__list">
+						        <a href="javascript:;" class="pagination__first">처음</a>
+						        <a href="javascript:;" class="pagination__prev">이전</a>
+						        <a href="javascript:;" class="pagination__num active">1</a>
+						        <a href="javascript:;" class="pagination__num">2</a>
+						        <a href="javascript:;" class="pagination__num ">3</a>
+						        <a href="javascript:;" class="pagination__num">4</a>
+						        <a href="javascript:;" class="pagination__num">5</a>
+						        <a href="javascript:;" class="pagination__next">다음</a>
+						        <a href="javascript:;" class="pagination__last">마지막</a>
+						    </div>
+						</div>
+						<!-- //페이징 -->
+					</div>
+					<!-- //TAB1 : 직접PPA 대금 - 소비 -->
+					
+					<!-- TAB2 : 직접 PPA 부가비용 - 망이용요금 -->
+					<div class="tab__content">
+						<!-- searchForm : 모바일에서 검색 조건 최대 2건 만 노출, 나머지는 상세 검색 -->
+						<div class="searchForm flex">
+							<div class="rowGroup">
+								<div class="row">
+									<dl class="expander__no col col__4 col__xxl__6 col__xl__6 col__lg__12">
+										<dt>전력거래 연월</dt>
+										<dd>
+											<span class="calPeriod">
+											    <span class="input ui-input-date">
+											        <input type="text" class="datepicker_month" placeholder="YYYY-MM" value="" readonly>
+											    </span>
+											    <span class="input ui-input-date">
+											        <input type="text" class="datepicker_month" placeholder="YYYY-MM" value="" readonly>
+											    </span>
+											</span>
+										</dd>
+									</dl>
+									<dl class="expander__no col col__2 col__xxl__4 col__xl__6 col__lg__12">
+										<dt>입금상태</dt>
+										<dd>
+											<span class="select">
+												<select>
+													<option value="">전체</option>
+													<option value="">입금대기</option>
+													<option value="">입금확인 필요</option>
+													<option value="">입금지연</option>
+													<option value="">반제전표 생성 요청</option>
+													<option value="">반제전표 생성 실패</option>
+													<option value="">반제전표 생성 완료</option>
+													<option value="">SAP전표 기안 실패</option>
+													<option value="">SAP전표 기안 반려</option>
+													<option value="">반제 완료</option>
+												</select>
+											</span>
+										</dd>
+									</dl>
+									<dl class="expander__item col col__6 col__xxl__10 col__xl__12 col__lg__12">
+										<dt>검색어</dt>
+										<dd>
+											<div class="search__box">
+												<span class="select">
+													<select>
+														<option value="">최종 계약번호</option>
+														<option value="">소비 개별 계약번호</option>
+														<option value="">전기사용자 명</option>
+													</select>
+												</span>
+												<span class="input keyword2">
+													<input type="text" placeholder="검색어를 입력해주세요.">
+												</span>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="expander__btn">
+								<button type="button" class="btn gray ico expander">상세검색</button>
+								<button type="button" class="btn  ico reset">초기화</button>
+								<button type="submit" class="btn search">검색</button>
+							</div>
+						</div>
+						<!-- //searchForm -->
+						<!-- 입금 필요 금액 -->
+						<div class="payment__box">
+							<p class="payment__tit">입금 필요 금액 - PPA부가비용(망이용요금)</p>
+							<p>
+								<span>총액</span>
+								<span class="payment__cost">2,110,000</span>
+								<span>원</span>
+							</p>
+						</div>
+						<!-- //입금 필요 금액 -->
+						<!-- table top -->
+						<div class="bbs__header type3">
+							<div class="bbs__header__left">
+								<div class="total__num">
+									<span>총 건수 :</span>
+									<strong class="num">852,129</strong>
+									<span>건</span>
+								</div>
+							</div>
+							<div class="bbs__header__right">
+						        <p>&#8251; 망이용요금 : 부가세 포함</p>
+						    </div>
+						</div>
+						<!-- //table top -->
+						<!-- table
+							- 테이블 가로 스크롤
+							- 데이터 최대 10개 노출, 나머지는 페이징 처리
+						-->
+						<!-- 입금 상태값
+							입금대기 : <span class="statusText status--wait">입금대기</span>
+							입금확인 필요 : <span class="statusText status--need">입금확인 필요</span>
+							입금지연 : <span class="statusText status--delay">입금지연</span>
+							
+							반제전표 생성 요청 : <span class="statusText status--request">반제전표 생성 요청</span>
+							반제전표 생성 실패 : <span class="statusText status--fail">반제전표 생성 실패</span>
+							반제전표 생성 완료 : <span class="statusText status--success">반제전표 생성 완료</span>
+
+							SAP전표 기안 실패 : <span class="statusText status--fail">SAP전표 기안 실패</span>
+							SAP전표 기안 반려 : <span class="statusText status--reject">SAP전표 기안 반려</span>
+
+							반제 완료 : <span class="statusText status--success">반제 완료</span>
+						 -->
+						<div style="overflow-x:auto; width:100%; white-space:nowrap;">
+							<table class="tbl__type__a hover">
+								<caption>직접 PPA부가비용(망이용요금) 목록</caption>
+								<thead>
+									<tr>
+										<th scope="col">No</th>
+										<th scope="col">전력거래 연월</th>
+										<th scope="col">최종 계약번호</th>
+										<th scope="col">소비 개별 계약번호</th>
+										<th scope="col">전기사용자명</th>
+										<th scope="col">계약전력(kW)</th>
+										<th scope="col">PPA 거래량(MWh)</th>
+										<th scope="col">망이용금액(청구금액)</th>
+										<th scope="col">입금 상태</th>
+										<th scope="col">SK E&amp;S 청구일자</th>
+										<th scope="col">입금기한 일자</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(망이용요금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--wait">입금대기</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(망이용요금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--need">입금확인 필요</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(망이용요금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--delay">입금지연</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(망이용요금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--request">반제전표 생성 요청</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(망이용요금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--fail">반제전표 생성 실패</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(망이용요금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">1,234,123</td>
+										<td> <span class="statusText status--success">반제전표 생성 완료</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(망이용요금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">1,234,123</td>
+										<td> <span class="statusText status--fail">SAP전표 기안 실패</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(망이용요금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">1,234,123</td>
+										<td> <span class="statusText status--reject">SAP전표 기안 반려</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(망이용요금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--success">반제 완료</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(망이용요금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--success">반제 완료</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //table -->
+						<!--
+							- 페이지네이션 활성화
+							- .pagination__num에만 적용.(처음 이전 다음 마지막은 활성화 안시킴)
+							- 활성화 클래스 : .active
+						-->
+						<div role="navigation" class="pagination" aria-label="pagination">
+						    <div class="pagination__list">
+						        <a href="javascript:;" class="pagination__first">처음</a>
+						        <a href="javascript:;" class="pagination__prev">이전</a>
+						        <a href="javascript:;" class="pagination__num active">1</a>
+						        <a href="javascript:;" class="pagination__num">2</a>
+						        <a href="javascript:;" class="pagination__num ">3</a>
+						        <a href="javascript:;" class="pagination__num">4</a>
+						        <a href="javascript:;" class="pagination__num">5</a>
+						        <a href="javascript:;" class="pagination__next">다음</a>
+						        <a href="javascript:;" class="pagination__last">마지막</a>
+						    </div>
+						</div>
+						<!-- //페이징 -->
+					</div>
+					<!-- //TAB2 : 직접 PPA 부가비용 - 망이용요금 -->
+					
+					<!-- TAB3 : 직접 PPA 부가비용 - 부가정산금 -->
+					<div class="tab__content">
+						<!-- searchForm : 모바일에서 검색 조건 최대 2건 만 노출, 나머지는 상세 검색 -->
+						<div class="searchForm flex">
+							<div class="rowGroup">
+								<div class="row">
+									<dl class="expander__no col col__4 col__xxl__6 col__xl__6 col__lg__12">
+										<dt>전력거래 연월</dt>
+										<dd>
+											<span class="calPeriod">
+											    <span class="input ui-input-date">
+											        <input type="text" class="datepicker_month" placeholder="YYYY-MM" value="" readonly>
+											    </span>
+											    <span class="input ui-input-date">
+											        <input type="text" class="datepicker_month" placeholder="YYYY-MM" value="" readonly>
+											    </span>
+											</span>
+										</dd>
+									</dl>
+									<dl class="expander__no col col__2 col__xxl__4 col__xl__6 col__lg__12">
+										<dt>입금상태</dt>
+										<dd>
+											<span class="select">
+												<select>
+													<option value="">전체</option>
+													<option value="">입금대기</option>
+													<option value="">입금확인 필요</option>
+													<option value="">입금지연</option>
+													<option value="">반제전표 생성 요청</option>
+													<option value="">반제전표 생성 실패</option>
+													<option value="">반제전표 생성 완료</option>
+													<option value="">SAP전표 기안 실패</option>
+													<option value="">SAP전표 기안 반려</option>
+													<option value="">반제 완료</option>
+												</select>
+											</span>
+										</dd>
+									</dl>
+									<dl class="expander__item col col__6 col__xxl__10 col__xl__12 col__lg__12">
+										<dt>검색어</dt>
+										<dd>
+											<div class="search__box">
+												<span class="select">
+													<select>
+														<option value="">최종 계약번호</option>
+														<option value="">소비 개별 계약번호</option>
+														<option value="">전기사용자 명</option>
+													</select>
+												</span>
+												<span class="input keyword2">
+													<input type="text" placeholder="검색어를 입력해주세요.">
+												</span>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="expander__btn">
+								<button type="button" class="btn gray ico expander">상세검색</button>
+								<button type="button" class="btn  ico reset">초기화</button>
+								<button type="submit" class="btn search">검색</button>
+							</div>
+						</div>
+						<!-- //searchForm -->
+						<!-- 입금 필요 금액 -->
+						<div class="payment__box">
+							<p class="payment__tit">입금 필요 금액 - PPA부가비용(부가정산금)</p>
+							<p>
+								<span>총액</span>
+								<span class="payment__cost">3,110,000</span>
+								<span>원</span>
+							</p>
+						</div>
+						<!-- //입금 필요 금액 -->
+						<!-- table top -->
+						<div class="bbs__header type3">
+							<div class="bbs__header__left">
+								<div class="total__num">
+									<span>총 건수 :</span>
+									<strong class="num">852,129</strong>
+									<span>건</span>
+								</div>
+							</div>
+							<div class="bbs__header__right">
+						        <p>&#8251; 부가정산금 : 부가세 포함</p>
+						    </div>
+						</div>
+						<!-- //table top -->
+						<!-- table
+							- 테이블 가로 스크롤
+							- 데이터 최대 10개 노출, 나머지는 페이징 처리
+						-->
+						<!-- 입금 상태값
+							입금대기 : <span class="statusText status--wait">입금대기</span>
+							입금확인 필요 : <span class="statusText status--need">입금확인 필요</span>
+							입금지연 : <span class="statusText status--delay">입금지연</span>
+							
+							반제전표 생성 요청 : <span class="statusText status--request">반제전표 생성 요청</span>
+							반제전표 생성 실패 : <span class="statusText status--fail">반제전표 생성 실패</span>
+							반제전표 생성 완료 : <span class="statusText status--success">반제전표 생성 완료</span>
+
+							SAP전표 기안 실패 : <span class="statusText status--fail">SAP전표 기안 실패</span>
+							SAP전표 기안 반려 : <span class="statusText status--reject">SAP전표 기안 반려</span>
+
+							반제 완료 : <span class="statusText status--success">반제 완료</span>
+						 -->
+						<div style="overflow-x:auto; width:100%; white-space:nowrap;">
+							<table class="tbl__type__a hover">
+								<caption>직접 PPA부가비용(부가정산금) 목록</caption>
+								<thead>
+									<tr>
+										<th scope="col">No</th>
+										<th scope="col">최종 계약번호</th>
+										<th scope="col">소비 개별 계약번호</th>
+										<th scope="col">전력거래 연월</th>
+										<th scope="col">차수</th>
+										<th scope="col">과세구부 </th>
+										<th scope="col">전기사용자 명</th>
+										<th scope="col">계약전력(kW)</th>
+										<th scope="col">PPA거래량(MWh)</th>
+										<th scope="col">망이용금액(청구금액)</th>
+										<th scope="col">입금 상태</th>
+										<th scope="col">SK E&amp;S 청구일자</th>
+										<th scope="col">입금기한 일자</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>2024-12</td>
+										<td>선차(1~3차)</td>
+										<td>과세</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(부가정산금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--wait">입금대기</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>2024-12</td>
+										<td>선차(1~3차)</td>
+										<td>과세</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(부가정산금).html" class="link " title="상세보기">송산 태양광 발전 1호기 송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--need">입금확인 필요</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>2024-12</td>
+										<td>선차(1~3차)</td>
+										<td>과세</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(부가정산금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--delay">입금지연</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>2024-12</td>
+										<td>선차(1~3차)</td>
+										<td>과세</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(부가정산금).html" class="link " title="상세보기">송산 태양광 발전 1호기 송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">1,234,123</td>
+										<td> <span class="statusText status--request">반제전표 생성 요청</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>2024-12</td>
+										<td>선차(1~3차)</td>
+										<td>과세</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(부가정산금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">1,234,123</td>
+										<td> <span class="statusText status--fail">반제전표 생성 실패</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>2024-12</td>
+										<td>선차(1~3차)</td>
+										<td>과세</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(부가정산금).html" class="link " title="상세보기">송산 태양광 발전 1호기 송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--success">반제전표 생성 완료</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>2024-12</td>
+										<td>선차(1~3차)</td>
+										<td>과세</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(부가정산금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--fail">SAP전표 기안 실패</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>2024-12</td>
+										<td>선차(1~3차)</td>
+										<td>과세</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(부가정산금).html" class="link " title="상세보기">송산 태양광 발전 1호기 송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--reject">SAP전표 기안 반려</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>2024-12</td>
+										<td>선차(1~3차)</td>
+										<td>과세</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(부가정산금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--success">반제 완료</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>2024-12</td>
+										<td>후차(4차)</td>
+										<td>과세</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(부가정산금).html" class="link " title="상세보기">송산 태양광 발전 1호기 송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--success">반제 완료</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //table -->
+						<!--
+							- 페이지네이션 활성화
+							- .pagination__num에만 적용.(처음 이전 다음 마지막은 활성화 안시킴)
+							- 활성화 클래스 : .active
+						-->
+						<div role="navigation" class="pagination" aria-label="pagination">
+						    <div class="pagination__list">
+						        <a href="javascript:;" class="pagination__first">처음</a>
+						        <a href="javascript:;" class="pagination__prev">이전</a>
+						        <a href="javascript:;" class="pagination__num active">1</a>
+						        <a href="javascript:;" class="pagination__num">2</a>
+						        <a href="javascript:;" class="pagination__num ">3</a>
+						        <a href="javascript:;" class="pagination__num">4</a>
+						        <a href="javascript:;" class="pagination__num">5</a>
+						        <a href="javascript:;" class="pagination__next">다음</a>
+						        <a href="javascript:;" class="pagination__last">마지막</a>
+						    </div>
+						</div>
+						<!-- //페이징 -->
+					</div>
+					<!-- //TAB3 : 직접 PPA 부가비용 - 부가정산금 -->
+					
+					<!-- TAB4 : 직접 PPA 부가비용 - 전력거래수수료 -->
+					<div class="tab__content">
+						<!-- searchForm : 모바일에서 검색 조건 최대 2건 만 노출, 나머지는 상세 검색 -->
+						<div class="searchForm flex">
+							<div class="rowGroup">
+								<div class="row">
+									<dl class="expander__no col col__4 col__xxl__6 col__xl__6 col__lg__12">
+										<dt>전력거래 연월</dt>
+										<dd>
+											<span class="calPeriod">
+											    <span class="input ui-input-date">
+											        <input type="text" class="datepicker_month" placeholder="YYYY-MM" value="" readonly>
+											    </span>
+											    <span class="input ui-input-date">
+											        <input type="text" class="datepicker_month" placeholder="YYYY-MM" value="" readonly>
+											    </span>
+											</span>
+										</dd>
+									</dl>
+									<dl class="expander__no col col__2 col__xxl__4 col__xl__6 col__lg__12">
+										<dt>입금상태</dt>
+										<dd>
+											<span class="select">
+												<select>
+													<option value="">전체</option>
+													<option value="">입금대기</option>
+													<option value="">입금확인 필요</option>
+													<option value="">입금지연</option>
+													<option value="">반제전표 생성 요청</option>
+													<option value="">반제전표 생성 실패</option>
+													<option value="">반제전표 생성 완료</option>
+													<option value="">SAP전표 기안 실패</option>
+													<option value="">SAP전표 기안 반려</option>
+													<option value="">반제 완료</option>
+												</select>
+											</span>
+										</dd>
+									</dl>
+									<dl class="expander__item col col__6 col__xxl__10 col__xl__12 col__lg__12">
+										<dt>검색어</dt>
+										<dd>
+											<div class="search__box">
+												<span class="select">
+													<select>
+														<option value="">최종 계약번호</option>
+														<option value="">소비 개별 계약번호</option>
+														<option value="">전기사용자 명</option>
+													</select>
+												</span>
+												<span class="input keyword2">
+													<input type="text" placeholder="검색어를 입력해주세요.">
+												</span>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="expander__btn">
+								<button type="button" class="btn gray ico expander">상세검색</button>
+								<button type="button" class="btn  ico reset">초기화</button>
+								<button type="submit" class="btn search">검색</button>
+							</div>
+						</div>
+						<!-- //searchForm -->
+						<!-- 입금 필요 금액 -->
+						<div class="payment__box">
+							<p class="payment__tit">입금 필요 금액 - PPA부가비용(전력거래수수료)</p>
+							<p>
+								<span>총액</span>
+								<span class="payment__cost">1,110,000</span>
+								<span>원</span>
+							</p>
+						</div>
+						<!-- //입금 필요 금액 -->
+						<!-- table top -->
+						<div class="bbs__header type3">
+							<div class="bbs__header__left">
+								<div class="total__num">
+									<span>총 건수 :</span>
+									<strong class="num">852,129</strong>
+									<span>건</span>
+								</div>
+							</div>
+							<div class="bbs__header__right">
+						        <p>&#8251; 전력거래수수료 : 부가세 포함</p>
+						    </div>
+						</div>
+						<!-- //table top -->
+						<!-- table
+							- 테이블 가로 스크롤
+							- 데이터 최대 10개 노출, 나머지는 페이징 처리
+						-->
+						<!-- 입금 상태값
+							입금대기 : <span class="statusText status--wait">입금대기</span>
+							입금확인 필요 : <span class="statusText status--need">입금확인 필요</span>
+							입금지연 : <span class="statusText status--delay">입금지연</span>
+							
+							반제전표 생성 요청 : <span class="statusText status--request">반제전표 생성 요청</span>
+							반제전표 생성 실패 : <span class="statusText status--fail">반제전표 생성 실패</span>
+							반제전표 생성 완료 : <span class="statusText status--success">반제전표 생성 완료</span>
+
+							SAP전표 기안 실패 : <span class="statusText status--fail">SAP전표 기안 실패</span>
+							SAP전표 기안 반려 : <span class="statusText status--reject">SAP전표 기안 반려</span>
+
+							반제 완료 : <span class="statusText status--success">반제 완료</span>
+						 -->
+						<div style="overflow-x:auto; width:100%; white-space:nowrap;">
+							<table class="tbl__type__a hover">
+								<caption>직접 PPA부가비용(전력거래수수료) 목록</caption>
+								<thead>
+									<tr>
+										<th scope="col">No</th>
+										<th scope="col">전력거래 연월</th>
+										<th scope="col">최종 계약번호</th>
+										<th scope="col">소비 개별 계약번호</th>
+										<th scope="col">전기사용자 명</th>
+										<th scope="col">계약전력(kW)</th>
+										<th scope="col">PPA 거래량(MWh)</th>
+										<th scope="col">적용 수수료단가(원/kWh)</th>
+										<th scope="col">전력거래수수료(청구 금액)</th>
+										<th scope="col">입금 상태</th>
+										<th scope="col">SK E&amp;S 청구일자</th>
+										<th scope="col">입금기한 일자</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(전력거래수수료).html" class="link " title="상세보기">송산 태양광 발전 1호기 송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--success">반제 완료</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(전력거래수수료).html" class="link " title="상세보기">송산 태양광 발전 1호기 송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--wait">입금대기</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(전력거래수수료).html" class="link " title="상세보기">송산 태양광 발전 1호기 송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--need">입금확인 필요</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(전력거래수수료).html" class="link " title="상세보기">송산 태양광 발전 1호기 송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td> <span class="statusText status--delay">입금지연</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(전력거래수수료).html" class="link " title="상세보기">송산 태양광 발전 1호기 송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--request">반제전표 생성 요청</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(전력거래수수료).html" class="link " title="상세보기">송산 태양광 발전 1호기 송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--fail">반제전표 생성 실패</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(전력거래수수료).html" class="link " title="상세보기">송산 태양광 발전 1호기 송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--success">반제전표 생성 완료</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(전력거래수수료).html" class="link " title="상세보기">송산 태양광 발전 1호기 송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--fail">SAP전표 기안 실패</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(전력거래수수료).html" class="link " title="상세보기">송산 태양광 발전 1호기 송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--reject">SAP전표 기안 반려</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(전력거래수수료).html" class="link " title="상세보기">송산 태양광 발전 1호기 송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--reject">SAP전표 기안 반려</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //table -->
+						<!--
+							- 페이지네이션 활성화
+							- .pagination__num에만 적용.(처음 이전 다음 마지막은 활성화 안시킴)
+							- 활성화 클래스 : .active
+						-->
+						<div role="navigation" class="pagination" aria-label="pagination">
+						    <div class="pagination__list">
+						        <a href="javascript:;" class="pagination__first">처음</a>
+						        <a href="javascript:;" class="pagination__prev">이전</a>
+						        <a href="javascript:;" class="pagination__num active">1</a>
+						        <a href="javascript:;" class="pagination__num">2</a>
+						        <a href="javascript:;" class="pagination__num ">3</a>
+						        <a href="javascript:;" class="pagination__num">4</a>
+						        <a href="javascript:;" class="pagination__num">5</a>
+						        <a href="javascript:;" class="pagination__next">다음</a>
+						        <a href="javascript:;" class="pagination__last">마지막</a>
+						    </div>
+						</div>
+						<!-- //페이징 -->
+					</div>
+					<!-- //TAB4 : 직접 PPA 부가비용 - 전력거래수수료 -->
+					
+					<!-- TAB5 : 직접 PPA 부가비용 - 전력산업기반기금 -->
+					<div class="tab__content">
+						<!-- searchForm : 모바일에서 검색 조건 최대 2건 만 노출, 나머지는 상세 검색 -->
+						<div class="searchForm flex">
+							<div class="rowGroup">
+								<div class="row">
+									<dl class="expander__no col col__4 col__xxl__6 col__xl__6 col__lg__12">
+										<dt>전력거래 연월</dt>
+										<dd>
+											<span class="calPeriod">
+											    <span class="input ui-input-date">
+											        <input type="text" class="datepicker_month" placeholder="YYYY-MM" value="" readonly>
+											    </span>
+											    <span class="input ui-input-date">
+											        <input type="text" class="datepicker_month" placeholder="YYYY-MM" value="" readonly>
+											    </span>
+											</span>
+										</dd>
+									</dl>
+									<dl class="expander__no col col__2 col__xxl__4 col__xl__6 col__lg__12">
+										<dt>입금상태</dt>
+										<dd>
+											<span class="select">
+												<select>
+													<option value="">전체</option>
+													<option value="">입금대기</option>
+													<option value="">입금확인 필요</option>
+													<option value="">입금지연</option>
+													<option value="">반제전표 생성 요청</option>
+													<option value="">반제전표 생성 실패</option>
+													<option value="">반제전표 생성 완료</option>
+													<option value="">SAP전표 기안 실패</option>
+													<option value="">SAP전표 기안 반려</option>
+													<option value="">반제 완료</option>
+												</select>
+											</span>
+										</dd>
+									</dl>
+									<dl class="expander__item col col__6 col__xxl__10 col__xl__12 col__lg__12">
+										<dt>검색어</dt>
+										<dd>
+											<div class="search__box">
+												<span class="select">
+													<select>
+														<option value="">최종 계약번호</option>
+														<option value="">소비 개별 계약번호</option>
+														<option value="">전기사용자 명</option>
+													</select>
+												</span>
+												<span class="input keyword2">
+													<input type="text" placeholder="검색어를 입력해주세요.">
+												</span>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="expander__btn">
+								<button type="button" class="btn gray ico expander">상세검색</button>
+								<button type="button" class="btn  ico reset">초기화</button>
+								<button type="submit" class="btn search">검색</button>
+							</div>
+						</div>
+						<!-- //searchForm -->
+						<!-- 입금 필요 금액 -->
+						<div class="payment__box">
+							<p class="payment__tit">입금 필요 금액 - PPA부가비용(전력산업기반기금)</p>
+							<p>
+								<span>총액</span>
+								<span class="payment__cost">1,110,000</span>
+								<span>원</span>
+							</p>
+						</div>
+						<!-- //입금 필요 금액 -->
+						<!-- table top -->
+						<div class="bbs__header type3">
+							<div class="bbs__header__left">
+								<div class="total__num">
+									<span>총 건수 :</span>
+									<strong class="num">852,129</strong>
+									<span>건</span>
+								</div>
+							</div>
+							<div class="bbs__header__right">
+						        <p>&#8251; 전력산업기반기금 : 부가세 포함</p>
+						    </div>
+						</div>
+						<!-- //table top -->
+						<!-- table
+							- 테이블 가로 스크롤
+							- 데이터 최대 10개 노출, 나머지는 페이징 처리
+						-->
+						<!-- 입금 상태값
+							입금대기 : <span class="statusText status--wait">입금대기</span>
+							입금확인 필요 : <span class="statusText status--need">입금확인 필요</span>
+							입금지연 : <span class="statusText status--delay">입금지연</span>
+							
+							반제전표 생성 요청 : <span class="statusText status--request">반제전표 생성 요청</span>
+							반제전표 생성 실패 : <span class="statusText status--fail">반제전표 생성 실패</span>
+							반제전표 생성 완료 : <span class="statusText status--success">반제전표 생성 완료</span>
+
+							SAP전표 기안 실패 : <span class="statusText status--fail">SAP전표 기안 실패</span>
+							SAP전표 기안 반려 : <span class="statusText status--reject">SAP전표 기안 반려</span>
+
+							반제 완료 : <span class="statusText status--success">반제 완료</span>
+						 -->
+						<div style="overflow-x:auto; width:100%; white-space:nowrap;">
+							<table class="tbl__type__a hover">
+								<caption>직접 PPA부가비용(전력산업기반기금) 목록</caption>
+								<thead>
+									<tr>
+										<th scope="col">No</th>
+										<th scope="col">전력거래 연월</th>
+										<th scope="col">최종 계약번호</th>
+										<th scope="col">소비 개별 계약번호</th>
+										<th scope="col">전기사용자명</th>
+										<th scope="col">계약전력(kW)</th>
+										<th scope="col">정산 항목 대금 총합</th>
+										<th scope="col">적용 비율(%)</th>
+										<th scope="col">전력산업 기반기금(청구 금액)</th>
+										<th scope="col">입금 상태</th>
+										<th scope="col">SK E&amp;S 청구일자</th>
+										<th scope="col">입금기한 일자</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(전력산업기반기금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--reject">SAP전표 기안 반려</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(전력산업기반기금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--wait">입금대기</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(전력산업기반기금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td> <span class="statusText status--need">입금확인 필요</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(전력산업기반기금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--delay">입금지연</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(전력산업기반기금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td> <span class="statusText status--delay">입금지연</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(전력산업기반기금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--request">반제전표 생성 요청</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(전력산업기반기금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--fail">반제전표 생성 실패</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(전력산업기반기금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td> <span class="statusText status--success">반제전표 생성 완료</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(전력산업기반기금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--fail">SAP전표 기안 실패</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td>2024-12</td>
+										<td>24-S000045</td>
+										<td>24-S000045</td>
+										<td>
+											<a href="./직접PPA대금_소비_상세(전력산업기반기금).html" class="link " title="상세보기">송산 태양광 발전 1호기</a>
+										</td>
+										<td class="text-right">1,234</td>
+										<td class="text-right">1,234,123</td>
+										<td class="text-right">120</td>
+										<td class="text-right">1,234,123</td>
+										<td><span class="statusText status--reject">SAP전표 기안 반려</span></td>
+										<td>2023-12-21</td>
+										<td>2023-12-21</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //table -->
+						<!--
+							- 페이지네이션 활성화
+							- .pagination__num에만 적용.(처음 이전 다음 마지막은 활성화 안시킴)
+							- 활성화 클래스 : .active
+						-->
+						<div role="navigation" class="pagination" aria-label="pagination">
+						    <div class="pagination__list">
+						        <a href="javascript:;" class="pagination__first">처음</a>
+						        <a href="javascript:;" class="pagination__prev">이전</a>
+						        <a href="javascript:;" class="pagination__num active">1</a>
+						        <a href="javascript:;" class="pagination__num">2</a>
+						        <a href="javascript:;" class="pagination__num ">3</a>
+						        <a href="javascript:;" class="pagination__num">4</a>
+						        <a href="javascript:;" class="pagination__num">5</a>
+						        <a href="javascript:;" class="pagination__next">다음</a>
+						        <a href="javascript:;" class="pagination__last">마지막</a>
+						    </div>
+						</div>
+						<!-- //페이징 -->
+					</div>
+					<!-- //TAB5 : 직접 PPA 부가비용 - 전력산업기반기금 -->
+				</div>
+				<!-- //tab box -->
+			</div>
+		</div>
+		
+		<!-- 페이지 개별 스크립트 -->
+		<script>
+			$(document).ready(function() {
+				ui.nav.act(2,1);
+				
+				//입금 지연일 때 tr color
+				$('.statusText.status--delay').parent().parent().css('background', '#fff4ed');
+			});
+		</script>
+		<!-- // 페이지 개별 스크립트 -->
+	</main>
+
+	<!-- 팝업 레이어 -->
+	<div id="layers" class="layers" >
+		<!--
+			- 레이어는 이안에 위치. 인클루드 위치도 이 곳.
+			- 페이지내에 레이어가 많아서 별도의 파일로 인클루드해서 사용할 시,  article영역만 외부로 빼서 파일로 만들고 인클루드.
+		-->
+
+		<article class="popLayer" id="test1">
+			<div class="pbd pop-sm">
+
+				<div class="phd">
+					<div class="in">
+						<h3 class="tit">타이틀</h3>
+						<button type="button" class="btnPopClose" title="레이어팝업 닫기"><i class="fa fa-times"></i>닫기</button>
+					</div>
+				</div>
+
+				<div class="pct">
+					<div class="poptents">
+						레이어 컨텐츠
+					</div>
+				</div>
+
+			</div>
+		</article>
+
+	</div>
+	<!-- // 팝업 레이어 -->
+<!-- ============= [e]페이지 컨텐츠 ============= -->
+
+
+
+
+
+<!-- ============= [s]푸터 공통 ============= -->
+	<footer>
+		<ul>
+			<li><a href="../../help/policy/개인정보처리방침.html" target="_blank">개인정보처리방침</a></li>
+		</ul>
+		COPYRIGHT © 2024 BY SK E&amp;S. ALL RIGHTS RESERVED.
+	</footer>
+
+	<!-- 전체 공통 스크립트 -->
+	<script>
+		$(window).on('load',function(){
+			// html 로드 순서 때문에 window.load 에 넣었는데. 개발시에는 document.ready에 넣어주시면 되겠습니다.
+			ui.init();
+		});
+
+		$(document).ready(function() {
+
+		});
+
+	</script>
+	<!-- //전체 공통 스크립트 -->
+</body>
+</html>
+<!-- ============= [e]푸터 공통 ============= -->
