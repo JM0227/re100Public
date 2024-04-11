@@ -1,0 +1,675 @@
+@charset "UTF-8";
+/* ========================================
+										color primary : #B3CF0A;
+										color secondary : #55A30F;
+										color third : #2D5905;
+										color dark-green : #043F31;
+										color solid : #FD8C43;
+										bg-gray : #F7F7F7;
+										text-primary : #444;
+										line-secondary : #9D9D9D;
+======================================== */
+
+
+
+/* ========================================
+										Layout
+======================================== */
+body{background:#F7F7F7}
+
+
+/* ========================================
+										Header
+======================================== */
+.header__inner .logo a{
+	width:215px;
+	height:36px;
+	background-image:url('../images/common/logo_h1_re100.svg');
+}
+
+.nav:before{
+	background:rgb(179,207,10);
+	background:linear-gradient(90deg, rgba(179,207,10,1) 0%, rgba(98,160,50,1) 100%);
+}
+.nav .nav__item:hover .nav__link:before,
+.nav .nav__link:focus:before,
+.nav .nav__link.nav__link--active:before,
+.nav .nav__link[aria-expanded="true"]:before{
+	background-color:rgba(255, 255, 255, .5);
+}
+
+.nav .nav-sub__link:hover,
+.nav .nav-sub__link:focus,
+.nav .nav-sub__link[aria-current="page"],
+.nav .nav-sub__link.nav-sub__link--active{
+	color:#55A30F;
+}
+
+.nav-mobile .navMb__link.nav__link--active span{
+	border-color:#B3CF0A;
+}
+
+.nav-mobile .nav-sub__link--active{
+	color:#55A30F;
+}
+
+
+
+/* ========================================
+										Footer
+======================================== */
+footer{
+	background-color:#DDDDDD;
+	color:#9D9D9D;
+}
+footer ul li{
+	font-weight:500;
+	color:#444;
+}
+footer ul li:not(:first-child):before{
+	background-color:#9D9D9D;
+}
+
+
+
+
+
+
+
+
+/* ========================================
+										Button
+======================================== */
+.btn.logout{
+	border-color:#043F31;
+}
+.btn.logout:hover{
+	border-color:#043F31;
+	background-color:#043F31;
+}
+.btn.search{
+	background-color:#B3CF0A;
+	border-color:#B3CF0A;
+	color:#fff;
+}
+.btn.search:hover{
+	opacity:.8;
+}
+.btn.search:disabled, .btn.search.disabled{
+	opacity:.5;
+}
+.btn.primary{
+	background-color:#043F31;
+	border-color:#043F31;
+	color:#fff;
+}
+.btn.primary:hover{
+	color:#fff;
+	opacity:.8;
+}
+.btn.primary:disabled, .btn.primary.disabled{
+	opacity:.5;
+}
+.btn.secondary{
+	background-color:#fff;
+	border-color:#043F31;
+	color:#043F31;
+}
+.btn.secondary:hover{
+	color:#043F31;
+	opacity:.8;
+}
+.btn.secondary:disabled, .btn.secondary.disabled{
+	opacity:.5;
+}
+.btn.darkgray{
+	background-color:#949494;
+	border-color:#949494;
+}
+.btn.ico.reset{
+	border-color:#ddd;
+}
+.btn.ico.clip:after{
+	background-image:url('../images/common/ico_file_clip_green.png');
+}
+
+/* ========================================
+										Form
+======================================== */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+	-webkit-box-shadow: 2px 2px 2px 1000px #f9fff3 inset;
+	box-shadow: 2px 2px 2px 1000px #f9fff3 inset;
+}
+
+span.input > input,
+span.select > select,
+span.textarea > textarea{
+	border-color:#ddd;
+}
+
+span.input > input:focus,
+span.select > select:focus,
+span.textarea > textarea:focus{
+	outline:none;
+	box-shadow:0px 0px 3px 3px rgb(227 227 227 / 60%);
+}
+
+span.input > input:read-only{
+	border-color:#ddd;
+	background-color:#f7f7f7;
+}
+
+span.input > input:disabled{
+	border-color:#ddd;
+	background-color:#f7f7f7;
+	opacity:.7;
+}
+
+/* select */
+span.select > select{
+	background-image:url(../images/common/ico_select2.png);
+	background-size:12px auto;
+	background-position:right 10px center;
+}
+span.select > select:disabled{
+	background-color:#f7f7f7;
+	border-color:#ddd;
+	color:#333;
+	opacity:.7;
+}
+
+/* textarea */
+span.textarea > textarea:read-only{
+	border-color:#ddd;
+	background-color:#f7f7f7;
+}
+
+span.textarea > textarea:disabled{
+	opacity:.7;
+}
+
+/* check box, radio */
+input[type="checkbox"],
+input[type="radio"]{
+	display:inline-block;
+	position:relative;
+	top:0;
+	left:0;
+	width:20px;
+	height:20px;
+	border:1px solid #ddd;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	background-color:#fff;
+}
+input[type="checkbox"]:checked,
+input[type="radio"]:checked{
+	border-color:#55A30F;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label{
+	padding-left:2px;
+}
+
+input[type="checkbox"]:checked::before{
+	content:'';
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:4px;
+	height:10px;
+	margin:-7px 0 0 -3px;
+	border:solid #55A30F;
+	border-width:0 3px 3px 0;
+	border-radius:2px;
+	transform:rotate(45deg);
+}
+input[type="radio"]{
+	border-radius:50%;
+}
+input[type="radio"]:checked::before{
+	content:'';
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:10px;
+	height:10px;
+	margin:-5px 0 0 -5px;
+	background:#55A30F;
+	border-radius:50%;
+}
+
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before{
+	display:none;
+}
+
+input[type="checkbox"]:readonly,
+input[type="radio"]:readonly{
+	background-color:#f7f7f7;
+}
+input[type="checkbox"]:readonly:disabled,
+input[type="radio"]:readonly:disabled{
+	border-color:#2D5905;
+}
+
+input[type="checkbox"]:readonly:disabled::before{
+	border-color:#2D5905;
+}
+input[type="radio"]:readonly:disabled::before{
+	background-color:#2D5905;
+}
+
+input[type="checkbox"]:checked:disabled + label,
+input[type="checkbox"]:disabled + label,
+input[type="radio"]:checked:disabled + label,
+input[type="radio"]:disabled + label{
+	opacity:.7;
+}
+
+input[type="checkbox"]:disabled,
+input[type="radio"]:disabled{
+	background-color:#f7f7f7;
+	opacity:.7;
+}
+input[type="checkbox"]:checked:disabled,
+input[type="radio"]:checked:disabled{
+	border-color:#2D5905;
+}
+
+input[type="checkbox"]:checked:disabled::before{
+	border-color:#2D5905;
+}
+input[type="radio"]:checked:disabled::before{
+	background-color:#2D5905;
+}
+
+input[type="checkbox"]:checked:disabled + label,
+input[type="checkbox"]:disabled + label,
+input[type="radio"]:checked:disabled + label,
+input[type="radio"]:disabled + label{
+	opacity:.7;
+}
+
+/* jquery ui - datepicker */
+.ui-datepicker .ui-datepicker-title select{
+	background-image:url(../images/common/ico_select2.png);
+	background-size:12px auto;
+	background-position:right 10px center;
+}
+.ui-datepicker th:first-child{
+	color:#FD8C43;
+}
+.ui-datepicker td:first-child a{
+	color:#FD8C43;
+}
+.ui-datepicker th:last-child{
+	color:#6096da;
+}
+.ui-datepicker td:last-child a{
+	color:#6096da;
+}
+.ui-datepicker .ui-datepicker-today .ui-state-highlight{
+	border-color:#043F31;
+}
+.ui-datepicker .ui-state-default.ui-state-active,
+.ui-datepicker .ui-state-default.ui-state-active:hover{
+	background-color:#043F31;
+}
+.yearpicker-items:hover{
+	color:#FD8C43;
+	background-color:#F7F7F7;
+	border-radius:4px;
+}
+
+
+/* paging */
+.pagination__list > a{border-color:#ddd;}
+.pagination__list .pagination__num.active,
+.pagination__list [aria-current="true"],
+.pagination__list .pagination__num:focus,
+.pagination__list .pagination__num:hover{
+	background-color:#9D9D9D;
+	border-color:#9D9D9D;
+}
+
+/* download form */
+.downloadForm .downloadForm__info{color:#55A30F}
+.downloadForm li .file_down:hover,
+.downloadForm li .file_preview:hover{
+	background-color:#55A30F;
+	border-color:#55A30F;
+}
+
+/* upload form */
+.uploadForm span.add__attach__file span.btn__attach label.fileButton{
+	background-color:#666;
+}
+.uploadForm .add__attach__info{
+	color:#55A30F;
+}
+
+/* ========================================
+										Table
+======================================== */
+
+/* Type__a */
+.tbl__type__a thead th{
+	border-color:#99A2A0;
+	background-color:#778481;
+}
+.tbl__type__a.dobleHeader thead tr:last-child th{
+	border-color:#99A2A0;
+}
+.tbl__type__a tbody td{
+	border-color:#ddd;
+}
+.tbl__type__a tbody th{
+	border-color:#99A2A0;
+	background-color:#778481;
+}
+.tbl__type__a .borderT{
+	border-top:solid 1px #99A2A0;
+}
+
+/* Type__b */
+.tableBox{
+	border-top-color:#778481;
+}
+.tbl__type__b thead th{
+	border-color:#ddd;
+}
+.tbl__type__b.header_bg thead th{
+	background-color:#e2e9e8;
+	border-color:#ecf4f3;
+}
+.tbl__type__b tbody td{
+	border-color:#ddd;
+}
+.tbl__type__b tbody th{
+	background-color:#778481;
+	border-color:#99A2A0;
+	color:#fff;
+}
+.tbl__type__b tbody th.borderR {
+	border-right: solid 1px #ecf4f3;
+}
+table.hover tbody tr:hover,
+table.hover tbody tr:hover td{
+	background-color:#f2ffe7;
+}
+
+
+
+
+/* ========================================
+										Search Form
+======================================== */
+.searchForm{border-color:#ddd}
+
+
+
+
+
+
+/* ========================================
+										서브 타이틀
+======================================== */
+.stitle > span:before{
+	background-color:#55A30F;
+}
+.stitle em{
+	color:#333;
+}
+.stitle em .num{
+	color:#FD8C43;
+}
+
+
+/* ========================================
+										레이어 팝업
+======================================== */
+.popLayer .pbd .phd{
+	background-color:#415953;
+}
+.pop__info--success{
+	width:40px;
+	height:40px;
+	background-image:url(../images/common/ico_success_green.png);
+	background-size:contain;
+}
+.pop__info--fail{
+	width:40px;
+	height:40px;
+	background-image:url(../images/common/ico_error_orange.png);
+	background-size:contain;
+}
+.pop__info--confirm{
+	width:40px;
+	height:40px;
+	background-size:contain;
+}
+.bank__list li.selected button:before,
+.bank__list li:hover button:before{
+	border-color:#71b85e;
+}
+
+
+
+
+
+
+
+
+/* ========================================
+										error massage
+======================================== */
+.msg__type1{color:#f4661c}
+.msg__type5{color:#DA7B53}
+
+
+
+/* ========================================
+										etc
+======================================== */
+a.link:hover{
+	color:#55A30F;
+	font-weight:400;
+}
+.text-red{
+	color:#FF5B5B !important;
+}
+span.required:before{
+	color:#ff8e00 !important;
+}
+.info__list.alert li{
+	color:#ff6400;
+}
+.info__list.alert li::before{
+	background-image:url(../images/common/ico_exclamation3.png);
+	background-size:95%;
+}
+
+@media only screen and (max-width:1024px) {
+	.mb__scroll .mb__scroll_info > div span {
+		background-image: url(../images/common/ico_hscroll_info_green.png);
+	}
+}
+
+
+/* ========================================
+										login
+======================================== */
+.login .login__container{
+	background-image:url('../images/common/bg_login_re100.png');
+	background-size:cover;
+}
+.login .login__logo a{
+	background-image:url(../images/common/logo_h1_re100.svg);
+	background-size:contain;
+}
+.login .login__form span.input input:focus{
+	border-color:#55A30F;	
+}
+.login .login__form .btn__login{
+	background-color:#043F31;
+}
+.changePw__box .change__form{
+	border-color:#ddd;
+}
+.changePw__box .change__step{
+	background-color:#f9f9f9;
+}
+.changePw__box .change__step ul li:after{
+	background-color:#c1c1c1;
+}
+.changePw__box .change__step ul li.on{
+	color:#FD8C43;
+}
+.changePw__box .change__step ul li.on:after{
+	background-color:#FD8C43;
+}
+.changePw__box .change__form > p:first-child span{
+	color:#2D5905;
+}
+
+
+
+
+@media only screen and (max-width: 1024px){
+	.login{
+		background-color:#F7F7F7;
+	}
+	.login .login__form h3{
+		color:#fff;
+	}
+	.login .login__container{
+		background:url('../images/common/bg_login_re100_mb.svg') no-repeat center top;
+	}
+	.login .login__form fieldset div label{
+		color:#fff;
+	}
+	.login .login__form span.input input{
+		background:rgba(255, 255, 255, .2);
+		border-color:rgba(255, 255, 255, .4);
+		color:#fff;
+	}
+	.login .login__form span.input input:focus{
+		border-color:rgba(255, 255, 255, .6);	
+	}
+	.login .login__form span.input input::-webkit-input-placeholder {
+		color:rgba(255, 255, 255, .6);
+	}
+	.login .login__form span.input input::-moz-placeholder {
+		color:#fff;
+	}
+	.login .login__form span.input input:-moz-placeholder {
+		color:#fff;
+	}
+	.login .login__form span.input input:-ms-input-placeholder {
+		color:#fff;
+	}
+	.login .login__form .login__util input[type="checkbox"]{
+		background-color:rgba(255, 255, 255, .2);
+		border-color:rgba(255, 255, 255, .4);
+	}
+	.login .login__form .login__util input[type="checkbox"]:checked{
+		border-color:rgba(255, 255, 255, .6);
+	}
+	.login .login__form .login__util input[type="checkbox"]:checked::before{
+		border-color:#fff;
+	}
+	
+	.login .login__form .login__util input[type="checkbox"] + label{
+		color:#fff;
+	}
+	.login .login__form .login__util a{
+		color:#fff;
+	}
+	.login .login__form .login__util a.txt__info{
+		color:#dbff00;
+		background-image:url('../images/common/ico_login_info_mb.png');
+	}	
+	.login .login__form .msg__type1{
+		color:#ffe42f;
+	}
+	.login .login__copyright{
+		height:auto;
+		line-height:1.5;
+	}
+	
+}
+
+
+
+
+
+/* ========================================
+										main
+======================================== */
+.main__welcome{
+	background-color:#6A9087;
+}
+.main__account > a{
+	border-color:#ddd;
+}
+.main__account > a p:nth-child(2):before{
+	background-image:url('../images/common/ico_arrow_right_gray.png');
+}
+.contract__item{
+	background-color:#E3EFEC;
+}
+.contract__item span{
+	color:#55A30F;
+}
+
+
+
+/* ========================================
+										sub_help(개인정보처리방침, 서비스이용약관)
+======================================== */
+.help__header{
+	background-color:#043F31;
+}
+
+
+/* ========================================
+										sub_setting(공지사항, 1:1 문의)
+======================================== */
+.notice__read__footer dt span{
+	background-color:#e9f7df;
+}
+.inquiry__status.inquiry__status--true:before{
+	border-color:#2D5905;
+	background-color:#2D5905;
+}
+.inquiry__status:before{
+	border-color:#2D5905;
+	color:#2D5905;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

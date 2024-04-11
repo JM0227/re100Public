@@ -1,0 +1,1061 @@
+@charset "utf-8";
+
+/* ========================================
+                                       pop layer
+======================================== */
+.popLayer {
+	display: none;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0;
+	left: 0px;
+	z-index: 10000;
+	padding: 0;
+	text-align:center;
+	white-space:nowrap;
+	outline: none;
+}
+.popLayer:after {
+	content: '';
+	width: 0;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.popLayer.on {
+	background-color: rgba(0,0,0,0.6);
+}
+.popLayer .pbd {
+	position: relative;
+	display:inline-block;
+	max-width: calc(100% - 60px);
+	min-width: 200px;
+	background-color: #fff;
+	border: rgba(0, 0, 0, .8) solid 1px;
+	box-shadow: rgba(0,0,0,0.2) 3px 3px 3px;
+	overflow: hidden;
+	text-align:left;
+	vertical-align: middle;
+	white-space:normal;
+}
+.popLayer .pbd.pop-sm {width: 400px !important; }
+.popLayer .pbd.pop-md {width: 600px !important; }
+.popLayer .pbd.pop-lg {width: 800px !important; }
+.popLayer .pbd.pop-xl {width: 1000px !important; }
+
+.popLayer .pbd .phd {
+	position: relative;
+	z-index: 90;
+	padding: 0 20px;
+	background-color: #4D5160;
+}
+.popLayer .pbd .phd .in {
+	position: relative;
+	height: 36px;
+	line-height: 36px;
+}
+.popLayer .pbd .phd h3.tit {
+	width: calc(100% - 40px);
+	height: 36px;
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.popLayer .phd .btnPopClose {
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	z-index: 100;
+	width: 24px;
+	height: 24px;
+	background: url(../images/common/popLayerClose.png) no-repeat center;
+	background-size: 100% auto;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	padding: 0;
+	transform: translateY(-50%);
+	text-indent: -9999px;
+}
+.popLayer .pbd .pct {
+	position: relative;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.popLayer .pct .poptents {
+	margin: 30px 20px 30px 20px;
+}
+.popLayer .pbd .pbt {
+	position: relative;
+	width: 100%;
+	padding: 10px 0;
+}
+.popLayer .pbd .pbt .btn__set {
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+}
+.popLayer.white .pbd .phd {
+	padding: 0 30px;
+	background-color: #fff;
+	border-bottom: solid 1px #d6d9da;
+}
+.popLayer.white .pbd .phd .in {
+	height: 60px;
+	line-height: 60px;
+}
+.popLayer.white .pbd .phd h3.tit {
+	height: 60px;
+	color: #444;
+	font-size: 2rem;
+}
+.popLayer.white .phd .btnPopClose {
+	background: url(../images/common/popLayerClose2.png) no-repeat center;
+}
+
+
+
+
+@media only screen and (max-width:1024px) {
+	.popLayer {
+		display: none;
+		position: fixed;
+		top:0px;
+		right: 0px;
+		bottom:0;
+		left: 0px;
+		z-index: 10000;
+		background-color: rgba(0,0,0,0.6);
+		padding: 0;
+		text-align:center;
+		white-space:nowrap;
+		outline: none;
+	}
+	.popLayer:after {
+		content: '';
+		width: 0;
+		height: 100%;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.popLayer .pbd {
+		position: relative;
+		display:inline-block;
+		max-width: calc(100% - 20px);
+		min-width: 200px;
+		background-color: #fff;
+		border: rgba(0, 0, 0, .8) solid 1px;
+		box-shadow: rgba(0,0,0,0.2) 3px 3px 3px;
+		overflow: hidden;
+		text-align:left;
+		vertical-align: middle;
+		white-space:normal;
+	}
+	.popLayer .pbd.pop-sm {width: 100% !important; }
+	.popLayer .pbd.pop-md {width: 100% !important; }
+	.popLayer .pbd.pop-lg {width: 100% !important; }
+	.popLayer .pbd.pop-xl {width: 100% !important; }
+
+	.popLayer .pbd .phd {
+		position: relative;
+		z-index: 90;
+		padding: 0 20px;
+		background-color: #4D5160;
+	}
+	.popLayer .pbd .phd .in {
+		position: relative;
+		display: flex;
+		align-items: center;
+		height: 36px;
+		line-height: 36px;
+	}
+	.popLayer .pbd .phd h3.tit {
+		width: calc(100% - 40px);
+		color: #fff;
+		font-size: 1.3rem;
+		font-weight: 700;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.popLayer .phd .btnPopClose {
+		position: absolute;
+		right: 0px;
+		top: 50%;
+		z-index: 100;
+		width: 24px;
+		height: 24px;
+		background: url(../images/common/popLayerClose.png) no-repeat center;
+		background-size: 100% auto;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		overflow: hidden;
+		padding: 0;
+		transform: translateY(-50%);
+		text-indent: -9999px;
+	}
+	.popLayer .pbd .pct {
+		position: relative;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	.popLayer .pct .poptents {
+		margin: 30px 20px 30px 20px;
+	}
+	.popLayer .pbd .pbt {
+		position: relative;
+		width: 100%;
+		padding: 10px 0;
+	}
+	.popLayer .pbd .pbt .btn__set {
+		margin: 0;
+		margin-bottom: 10px;
+		padding: 0;
+	}
+	.popLayer.white .pbd .phd {
+		padding: 0 20px;
+		background-color: #fff;
+		border-bottom: solid 1px #d6d9da;
+	}
+	.popLayer.white .pbd .phd .in {
+		height: 50px;
+		line-height: 50px;
+	}
+	.popLayer.white .pbd .phd h3.tit {
+		height: 50px;
+		color: #444;
+		font-size: 1.6rem;
+	}
+	.popLayer.white .phd .btnPopClose {
+		background: url(../images/common/popLayerClose2.png) no-repeat center;
+	}
+}
+
+
+
+
+
+
+/* ========================================
+                                       main 서비스약관동의
+======================================== */
+.popLayer.type1 .pbd {
+	width: 860px;
+}
+.popLayer.type1 .pbd .phd {
+	position: relative;
+	height: 50px;
+	z-index: 90;
+	padding: 0 20px;
+	background-color: #fff;
+}
+.popLayer.type1 .pbd .phd .in {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 50px;
+}
+.popLayer.type1 .pbd .phd h3.tit {
+	width: calc(100% - 40px);
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 700;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.popLayer.type1 .phd .btnPopClose {
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	z-index: 100;
+	width: 24px;
+	height: 24px;
+	background: url(../images/common/popLayerClose2.png) no-repeat center;
+	background-size: 100% auto;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	padding: 0;
+	transform: translateY(-50%);
+	text-indent: -9999px;
+}
+.popLayer.type1 .pct .poptents {
+	margin: 0 40px 10px 40px;
+	text-align: center;
+}
+.popLayer.type1 .poptents h4 {
+	font-size: 2.2rem;
+	font-weight: 700;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.popLayer.type1 .poptents p {
+	text-align: center;
+}
+.popLayer.type1 .poptents p span {
+	color: #e1002a;
+	margin-top: 0;
+}
+.popLayer.type1 .poptents div:not(.ag) {
+	height: 400px;
+	border: solid 1px #d5dade;
+	margin-top: 20px;
+	padding: 20px;
+	overflow-y: auto;
+	text-align: left;
+}
+.popLayer.type1 .poptents .ag {
+	margin-top: 20px;
+}
+
+
+
+
+@media only screen and (max-width:1024px) {
+	.popLayer.type1 .pbd {
+		width: 100%;
+	}
+	.popLayer.type1 .pbd .phd {
+		position: relative;
+		height: 50px;
+		z-index: 90;
+		padding: 0 20px;
+		background-color: #fff;
+	}
+	.popLayer.type1 .pbd .phd .in {
+		position: relative;
+		display: flex;
+		align-items: center;
+		height: 50px;
+	}
+	.popLayer.type1 .pbd .phd h3.tit {
+		width: calc(100% - 40px);
+		color: #fff;
+		font-size: 1.3rem;
+		font-weight: 700;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.popLayer.type1 .phd .btnPopClose {
+		position: absolute;
+		right: 0px;
+		top: 50%;
+		z-index: 100;
+		width: 24px;
+		height: 24px;
+		background: url(../images/common/popLayerClose2.png) no-repeat center;
+		background-size: 100% auto;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		overflow: hidden;
+		padding: 0;
+		transform: translateY(-50%);
+		text-indent: -9999px;
+	}
+	.popLayer.type1 .pct {
+		padding: 0;
+	}
+	.popLayer.type1 .pct .poptents {
+		margin: 0 15px 0px 15px;
+		text-align: center;
+	}
+	.popLayer.type1 .poptents h4 {
+		font-size: 1.6rem;
+		font-weight: 700;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.popLayer.type1 .poptents p {
+		line-height: 140%;
+		text-align: center;
+	}
+	.popLayer.type1 .poptents p span {
+		color: #e1002a;
+		margin-top: 0;
+	}
+	.popLayer.type1 .poptents div:not(.ag) {
+		height: 300px;
+		border: solid 1px #d5dade;
+		font-size: 1.4rem;
+		line-height: 140%;
+		margin-top: 20px;
+		padding: 10px;
+		overflow-y: auto;
+		text-align: left;
+	}
+	.popLayer.type1 .poptents .ag {
+		margin-top: 20px;
+	}
+	.popLayer.type1 .poptents input[type="checkbox"] + label {
+		font-size: 1.3rem;
+	}
+}
+
+
+
+
+
+
+/* ========================================
+                                        성공,실패
+======================================== */
+.pop__info {
+	font-size: 1.6rem;
+	line-height:1.7;
+	text-align: center;
+}
+.pop__info--success {
+	display: block;
+	width: 33px;
+	height: 28px;
+	background-image: url(../images/common/ico_success.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin: 20px auto;
+}
+.pop__info--fail {
+	display: block;
+	width: 26px;
+	height: 26px;
+	background-image: url(../images/common/ico_error.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin: 20px auto;
+}
+.pop__info--confirm{
+	display: block;
+	width: 26px;
+	height: 26px;
+	background-image: url(../images/common/ico_confirm_pop.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin: 20px auto;
+}
+
+
+
+
+
+/* ========================================
+                                        은행 찾기
+======================================== */
+.find__bank .search__box:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.find__bank .search__box .input {
+	display: block;
+	width: 400px;
+	margin: 0 auto;
+}
+.bankscroll {
+	height: 400px;
+	margin-top: 20px;
+	overflow-y: auto;
+	padding: 10px 0;
+}
+.bank__list {
+	display: block;
+}
+.bank__list + .bank__list {
+	margin-top: 30px;
+}
+.bank__list:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.bank__list li {
+	float: left;
+	width: 33.333333%;
+	text-align: center;
+}
+.bank__list li:nth-child(n+4) {
+	margin-top: 10px;
+}
+.bank__list li button {
+	position: relative;
+	display: block;
+	width: 90%;
+	border-radius: 3px;
+	cursor: pointer;
+	margin: 0 auto;
+	padding: 7px 10px 5px 10px;
+	text-align: left;
+	transition: all .3s ease;
+}
+.bank__list li button:before {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	content: '';
+	width: 100%;
+	height: 100%;
+	border: solid 1px #ddd;
+	border-radius: 6px;
+}
+.bank__list li.selected button:before,
+.bank__list li:hover button:before {
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	content: '';
+	width: 100%;
+	height: 100%;
+	border: solid 2px #5e90b8;
+	border-radius: 6px;
+}
+.bank__list li button i {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:center center;
+}
+.bank__list li button span {
+	display: inline-block;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+.bank__list li.selected button span {
+	color: #000;
+	font-weight: 700;
+}
+.bank__list .ico_bank_01 {background-image: url(../images/bank/ico_bank_01.png);}
+.bank__list .ico_bank_02 {background-image: url(../images/bank/ico_bank_02.png);}
+.bank__list .ico_bank_03 {background-image: url(../images/bank/ico_bank_03.png);}
+.bank__list .ico_bank_04 {background-image: url(../images/bank/ico_bank_04.png);}
+.bank__list .ico_bank_05 {background-image: url(../images/bank/ico_bank_05.png);}
+.bank__list .ico_bank_06 {background-image: url(../images/bank/ico_bank_06.png);}
+.bank__list .ico_bank_07 {background-image: url(../images/bank/ico_bank_07.png);}
+.bank__list .ico_bank_08 {background-image: url(../images/bank/ico_bank_08.png);}
+.bank__list .ico_bank_09 {background-image: url(../images/bank/ico_bank_09.png);}
+.bank__list .ico_bank_10 {background-image: url(../images/bank/ico_bank_10.png);}
+
+.bank__list .ico_bank_11 {background-image: url(../images/bank/ico_bank_11.png);}
+.bank__list .ico_bank_12 {background-image: url(../images/bank/ico_bank_12.png);}
+.bank__list .ico_bank_13 {background-image: url(../images/bank/ico_bank_13.png);}
+.bank__list .ico_bank_14 {background-image: url(../images/bank/ico_bank_14.png);}
+.bank__list .ico_bank_15 {background-image: url(../images/bank/ico_bank_15.png);}
+.bank__list .ico_bank_16 {background-image: url(../images/bank/ico_bank_16.png);}
+.bank__list .ico_bank_17 {background-image: url(../images/bank/ico_bank_17.png);}
+.bank__list .ico_bank_18 {background-image: url(../images/bank/ico_bank_18.png);}
+.bank__list .ico_bank_19 {background-image: url(../images/bank/ico_bank_19.png);}
+.bank__list .ico_bank_20 {background-image: url(../images/bank/ico_bank_20.png);}
+
+.bank__list .ico_bank_21 {background-image: url(../images/bank/ico_bank_21.png);}
+.bank__list .ico_bank_22 {background-image: url(../images/bank/ico_bank_22.png);}
+.bank__list .ico_bank_23 {background-image: url(../images/bank/ico_bank_23.png);}
+.bank__list .ico_bank_24 {background-image: url(../images/bank/ico_bank_24.png);}
+.bank__list .ico_bank_25 {background-image: url(../images/bank/ico_bank_25.png);}
+.bank__list .ico_bank_26 {background-image: url(../images/bank/ico_bank_26.png);}
+.bank__list .ico_bank_27 {background-image: url(../images/bank/ico_bank_27.png);}
+.bank__list .ico_bank_28 {background-image: url(../images/bank/ico_bank_28.png);}
+.bank__list .ico_bank_29 {background-image: url(../images/bank/ico_bank_29.png);}
+.bank__list .ico_bank_30 {background-image: url(../images/bank/ico_bank_30.png);}
+
+.bank__list .ico_bank_31 {background-image: url(../images/bank/ico_bank_31.png);}
+.bank__list .ico_bank_32 {background-image: url(../images/bank/ico_bank_32.png);}
+.bank__list .ico_bank_33 {background-image: url(../images/bank/ico_bank_33.png);}
+.bank__list .ico_bank_34 {background-image: url(../images/bank/ico_bank_34.png);}
+.bank__list .ico_bank_35 {background-image: url(../images/bank/ico_bank_35.png);}
+.bank__list .ico_bank_36 {background-image: url(../images/bank/ico_bank_36.png);}
+.bank__list .ico_bank_37 {background-image: url(../images/bank/ico_bank_37.png);}
+.bank__list .ico_bank_38 {background-image: url(../images/bank/ico_bank_38.png);}
+.bank__list .ico_bank_39 {background-image: url(../images/bank/ico_bank_39.png);}
+.bank__list .ico_bank_40 {background-image: url(../images/bank/ico_bank_40.png);}
+
+.bank__list .ico_bank_41 {background-image: url(../images/bank/ico_bank_41.png);}
+.bank__list .ico_bank_42 {background-image: url(../images/bank/ico_bank_42.png);}
+.bank__list .ico_bank_43 {background-image: url(../images/bank/ico_bank_43.png);}
+.bank__list .ico_bank_44 {background-image: url(../images/bank/ico_bank_44.png);}
+.bank__list .ico_bank_45 {background-image: url(../images/bank/ico_bank_45.png);}
+.bank__list .ico_bank_46 {background-image: url(../images/bank/ico_bank_46.png);}
+.bank__list .ico_bank_47 {background-image: url(../images/bank/ico_bank_47.png);}
+.bank__list .ico_bank_48 {background-image: url(../images/bank/ico_bank_48.png);}
+.bank__list .ico_bank_49 {background-image: url(../images/bank/ico_bank_49.png);}
+.bank__list .ico_bank_50 {background-image: url(../images/bank/ico_bank_50.png);}
+
+.bank__list .ico_bank_51 {background-image: url(../images/bank/ico_bank_51.png);}
+.bank__list .ico_bank_52 {background-image: url(../images/bank/ico_bank_52.png);}
+.bank__list .ico_bank_53 {background-image: url(../images/bank/ico_bank_53.png);}
+.bank__list .ico_bank_54 {background-image: url(../images/bank/ico_bank_54.png);}
+.bank__list .ico_bank_55 {background-image: url(../images/bank/ico_bank_55.png);}
+.bank__list .ico_bank_56 {background-image: url(../images/bank/ico_bank_56.png);}
+.bank__list .ico_bank_57 {background-image: url(../images/bank/ico_bank_57.png);}
+.bank__list .ico_bank_58 {background-image: url(../images/bank/ico_bank_58.png);}
+.bank__list .ico_bank_59 {background-image: url(../images/bank/ico_bank_59.png);}
+.bank__list .ico_bank_60 {background-image: url(../images/bank/ico_bank_60.png);}
+
+.bank__list .ico_bank_61 {background-image: url(../images/bank/ico_bank_61.png);}
+
+
+
+
+@media only screen and (max-width:1024px) {
+	.find__bank .search__box:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+	.find__bank .search__box .input {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.bankscroll {
+		height: 300px;
+		margin-top: 20px;
+		overflow-y: auto;
+		padding: 10px 0;
+	}
+	.bank__list {
+		padding-left: 2px;
+	}
+	.bank__list:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+	.bank__list li {
+		float: left;
+		width: calc((100% - 20px) / 2);
+		text-align: center;
+	}
+	.bank__list li:nth-child(n+4) {
+		margin-top: 0;
+	}
+	.bank__list li:nth-child(n+3) {
+		margin-top: 10px;
+	}
+	.bank__list li:nth-child(even) {
+		margin-left: 10px;
+	}
+	.bank__list li button {
+		position: relative;
+		display: block;
+		width: 100%;
+		border-radius: 3px;
+		color: #444;
+		cursor: pointer;
+		margin: 0 auto;
+		padding: 7px 5px 5px 15px;
+		text-align: left;
+		transition: all .3s ease;
+	}
+	.bank__list li button:before {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		content: '';
+		width: 100%;
+		height: 100%;
+		border: solid 1px #ddd;
+		border-radius: 6px;
+	}
+	.bank__list li.selected button:before,
+	.bank__list li:hover button:before {
+		position: absolute;
+		top: -2px;
+		left: -2px;
+		content: '';
+		width: 100%;
+		height: 100%;
+		border: solid 2px #5e90b8;
+		border-radius: 6px;
+	}
+	.bank__list li button i {
+		float: left;
+		display: block;
+		width: 16px;
+		height: 16px;
+		vertical-align: middle;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: cener center;
+	}
+	.bank__list li button {
+		font-size: 1.3rem;
+	}
+	.bank__list li button span {
+		float: left;
+		display: block;
+		width: calc(100% - 16px);
+		/*padding-top: 2px;*/
+		padding-left: 5px;
+		vertical-align: middle;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.bank__list li.selected button span {
+		color: #000;
+		font-weight: 400;
+	}
+	.bank__list .ico_bank_01 {background-image: url(../images/bank/ico_bank_01.png);}
+	.bank__list .ico_bank_02 {background-image: url(../images/bank/ico_bank_02.png);}
+	.bank__list .ico_bank_03 {background-image: url(../images/bank/ico_bank_03.png);}
+	.bank__list .ico_bank_04 {background-image: url(../images/bank/ico_bank_04.png);}
+	.bank__list .ico_bank_05 {background-image: url(../images/bank/ico_bank_05.png);}
+	.bank__list .ico_bank_06 {background-image: url(../images/bank/ico_bank_06.png);}
+	.bank__list .ico_bank_07 {background-image: url(../images/bank/ico_bank_07.png);}
+	.bank__list .ico_bank_08 {background-image: url(../images/bank/ico_bank_08.png);}
+	.bank__list .ico_bank_09 {background-image: url(../images/bank/ico_bank_09.png);}
+	.bank__list .ico_bank_10 {background-image: url(../images/bank/ico_bank_10.png);}
+	.bank__list .ico_bank_11 {background-image: url(../images/bank/ico_bank_11.png);}
+	.bank__list .ico_bank_12 {background-image: url(../images/bank/ico_bank_12.png);}
+	.bank__list .ico_bank_13 {background-image: url(../images/bank/ico_bank_13.png);}
+	.bank__list .ico_bank_14 {background-image: url(../images/bank/ico_bank_14.png);}
+	.bank__list .ico_bank_15 {background-image: url(../images/bank/ico_bank_15.png);}
+	.bank__list .ico_bank_16 {background-image: url(../images/bank/ico_bank_16.png);}
+	.bank__list .ico_bank_17 {background-image: url(../images/bank/ico_bank_17.png);}
+	.bank__list .ico_bank_18 {background-image: url(../images/bank/ico_bank_18.png);}
+	.bank__list .ico_bank_19 {background-image: url(../images/bank/ico_bank_19.png);}
+	.bank__list .ico_bank_20 {background-image: url(../images/bank/ico_bank_20.png);}
+	.bank__list .ico_bank_21 {background-image: url(../images/bank/ico_bank_21.png);}
+	.bank__list .ico_bank_22 {background-image: url(../images/bank/ico_bank_22.png);}
+	.bank__list .ico_bank_23 {background-image: url(../images/bank/ico_bank_23.png);}
+	.bank__list .ico_bank_24 {background-image: url(../images/bank/ico_bank_24.png);}
+	.bank__list .ico_bank_25 {background-image: url(../images/bank/ico_bank_25.png);}
+	.bank__list .ico_bank_26 {background-image: url(../images/bank/ico_bank_26.png);}
+	.bank__list .ico_bank_27 {background-image: url(../images/bank/ico_bank_27.png);}
+	.bank__list .ico_bank_28 {background-image: url(../images/bank/ico_bank_28.png);}
+	.bank__list .ico_bank_29 {background-image: url(../images/bank/ico_bank_29.png);}
+	.bank__list .ico_bank_30 {background-image: url(../images/bank/ico_bank_30.png);}
+	.bank__list .ico_bank_31 {background-image: url(../images/bank/ico_bank_31.png);}
+	.bank__list .ico_bank_32 {background-image: url(../images/bank/ico_bank_32.png);}
+	.bank__list .ico_bank_33 {background-image: url(../images/bank/ico_bank_33.png);}
+	.bank__list .ico_bank_34 {background-image: url(../images/bank/ico_bank_34.png);}
+	.bank__list .ico_bank_35 {background-image: url(../images/bank/ico_bank_35.png);}
+	.bank__list .ico_bank_36 {background-image: url(../images/bank/ico_bank_36.png);}
+	.bank__list .ico_bank_37 {background-image: url(../images/bank/ico_bank_37.png);}
+	.bank__list .ico_bank_38 {background-image: url(../images/bank/ico_bank_38.png);}
+	.bank__list .ico_bank_39 {background-image: url(../images/bank/ico_bank_39.png);}
+	.bank__list .ico_bank_40 {background-image: url(../images/bank/ico_bank_40.png);}
+	.bank__list .ico_bank_41 {background-image: url(../images/bank/ico_bank_41.png);}
+	.bank__list .ico_bank_42 {background-image: url(../images/bank/ico_bank_42.png);}
+	.bank__list .ico_bank_43 {background-image: url(../images/bank/ico_bank_43.png);}
+	.bank__list .ico_bank_44 {background-image: url(../images/bank/ico_bank_44.png);}
+	.bank__list .ico_bank_45 {background-image: url(../images/bank/ico_bank_45.png);}
+	.bank__list .ico_bank_46 {background-image: url(../images/bank/ico_bank_46.png);}
+	.bank__list .ico_bank_47 {background-image: url(../images/bank/ico_bank_47.png);}
+	.bank__list .ico_bank_48 {background-image: url(../images/bank/ico_bank_48.png);}
+	.bank__list .ico_bank_49 {background-image: url(../images/bank/ico_bank_49.png);}
+	.bank__list .ico_bank_50 {background-image: url(../images/bank/ico_bank_50.png);}
+	.bank__list .ico_bank_51 {background-image: url(../images/bank/ico_bank_51.png);}
+	.bank__list .ico_bank_52 {background-image: url(../images/bank/ico_bank_52.png);}
+	.bank__list .ico_bank_53 {background-image: url(../images/bank/ico_bank_53.png);}
+	.bank__list .ico_bank_54 {background-image: url(../images/bank/ico_bank_54.png);}
+	.bank__list .ico_bank_55 {background-image: url(../images/bank/ico_bank_55.png);}
+	.bank__list .ico_bank_56 {background-image: url(../images/bank/ico_bank_56.png);}
+	.bank__list .ico_bank_57 {background-image: url(../images/bank/ico_bank_57.png);}
+	.bank__list .ico_bank_58 {background-image: url(../images/bank/ico_bank_58.png);}
+	.bank__list .ico_bank_59 {background-image: url(../images/bank/ico_bank_59.png);}
+	.bank__list .ico_bank_60 {background-image: url(../images/bank/ico_bank_60.png);}
+	.bank__list .ico_bank_61 {background-image: url(../images/bank/ico_bank_61.png);}
+}
+
+
+
+
+
+
+/* ========================================
+                                        주소 찾기
+======================================== */
+.search__address {
+	background: #fafafa;
+	border: solid 1px #ccc;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+.search__address:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.search__address .item,
+.search__address .dt,
+.search__address .dd {
+	float: left;
+	display: block;
+}
+.search__address .item:not(:first-child) {
+	margin-left: 15px;
+}
+.search__address .dt {
+	width: 50px;
+	line-height: 32px;
+	padding-right: 5px;
+	text-align: center;
+}
+.search__address .dd {
+	width: calc(100% - 50px);
+}
+.search__address .dd .select {
+	width: 100px;
+}
+.search__address .aProvince {
+	width: 170px;
+}
+.search__address .aCity {
+	width: 170px;
+}
+.search__address .aAddrType {
+	width: 120px;
+}
+.search__address .aSearch {
+	width: calc(100% - 505px);
+}
+.search__address .aSearch:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.search__address .aSearch .dd {
+	width: 100%;
+}
+.search__address .aSearch .input {
+	dispaly: block;
+	float: left;
+	width: calc(100% - 40px);
+}
+.search__address .aSearch .input input {
+	width: 100%;
+}
+.search__address .aSearch .search {
+	dispaly: block;
+	float: right;
+	margin-left: 5px;
+}
+.search__address.simple .aProvince {display: none;}
+.search__address.simple .aCity {display: none;}
+.search__address.simple .aAddrType {
+	margin-left: 0;
+}
+.search__address.simple .aSearch {
+	width: calc(100% - 135px);
+}
+.address__list__header {
+	background-color:#fff;
+	border-bottom: solid 1px #d6dad9;
+	padding: 10px 0;
+}
+.address__list__header:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.address__list__header strong:first-child {
+	display: block;
+	float: left;
+	width: 120px;
+	text-align: center;
+}
+.address__list__header strong:last-child {
+	display: block;
+	float: left;
+	width: calc(100% - 120px);
+	text-align: center;
+}
+.address__list {
+	height: 350px;
+	overflow-y: auto;
+}
+.address__list li:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.address__list li {
+	background-color:#fff;
+	border-bottom: solid 1px #d6dad9;
+	cursor: pointer;
+	padding: 7px 0;
+}
+.address__list li.on,
+.address__list li:hover {
+	background-color:#e2ecfe;
+}
+.address__list li a {
+	display: block;
+}
+.address__list li a:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.address__list li span {
+	float: left;
+	display: block;
+	width: 120px;
+	color: #e84766;
+	text-align: center;
+}
+.address__list li p {
+	float: left;
+	display: block;
+	width: calc(100% - 120px);
+	text-align: left;
+	padding-left: 20px;
+}
+
+
+
+
+@media only screen and (max-width:1024px) {
+	.search__address {
+		background: #fafafa;
+		border: solid 1px #ccc;
+		margin-bottom: 10px;
+		padding: 5px;
+	}
+	.search__address:after,
+	.search__address .item:after,
+	.search__address .dd:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+	.search__address .item,
+	.search__address .dt,
+	.search__address .dd {
+		display: block;
+	}
+	.search__address .item:not(:first-child) {
+		margin-left: 0;
+	}
+	.search__address .item + .item {
+		margin-top: 5px;
+	}
+	.search__address .dt {
+		float: left;
+		display: block;
+		width: 70px;
+		line-height: 32px;
+		font-size: 1.3rem;
+		padding-right: 5px;
+		text-align: center;
+	}
+	.search__address .dd {
+		float: left;
+		display: block;
+		width: calc(100% - 70px);
+	}
+	.search__address .dd .select {
+		width: 100%;
+	}
+	.search__address .aProvince {
+		width: 100%;
+	}
+	.search__address .aCity {
+		width: 100%;
+	}
+	.search__address .aAddrType {
+		width: 100%;
+	}
+	.search__address .aAddrType .dd {
+		width: 100%;
+	}
+	.search__address .aSearch {
+		width: 100%;
+	}
+	.search__address .aSearch:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+	.search__address .aSearch .dd {
+		width: 100%;
+	}
+	.search__address .aSearch .input {
+		dispaly: block;
+		float: left;
+		width: calc(100% - 40px);
+	}
+	.search__address .aSearch .input input {
+		width: 100%;
+	}
+	.search__address .aSearch .search {
+		dispaly: block;
+		float: right;
+		margin-left: 5px;
+	}
+	.search__address.simple .aProvince {display: none;}
+	.search__address.simple .aCity {display: none;}
+	.search__address.simple .aAddrType {
+		margin-left: 0;
+		margin-top: 0;
+	}
+	.search__address.simple .aSearch {
+		width: 100%;
+	}
+	.find__address .tableBox {
+		padding: 0;
+	}
+	.address__list__header {
+		display: none;
+	}
+	.address__list {
+		height: 300px;
+		overflow-y: auto;
+		padding: 0 10px;
+	}
+	.address__list li:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+	.address__list li {
+		background-color:#fff;
+		border-bottom: solid 1px #d6dad9;
+		cursor: pointer;
+		padding: 7px 0;
+	}
+	.address__list li.on,
+	.address__list li:hover {
+		background-color:#e2ecfe;
+	}
+	.address__list li a {
+		display: block;
+	}
+	.address__list li a:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+	.address__list li span {
+		float: none;
+		display: block;
+		width: 100%;
+		color: #e84766;
+		font-size: 1.4rem;
+		text-align: left;
+	}
+	.address__list li p {
+		float: none;
+		display: block;
+		width: 100%;
+		font-size: 1.4rem;
+		text-align: left;
+		padding-left: 0;
+	}
+}
